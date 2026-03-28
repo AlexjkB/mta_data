@@ -37,6 +37,12 @@ def load_to_bigquery(dataset_name: str):
     print(f"  Loaded {table.num_rows:,} rows into {table_ref}")
 
 
+def load_all_datasets():
+    for dataset_name in DATASETS:
+        print(f"Loading {dataset_name}...")
+        load_to_bigquery(dataset_name)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", required=True, choices=list(DATASETS.keys()))
