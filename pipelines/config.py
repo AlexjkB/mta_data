@@ -23,7 +23,7 @@ DATASETS = {
     },
     "bridges_tunnels": {
         "dataset_id": "dtj7-qync",
-        "date_column": "date",
+        "date_column": "collection_date",
         "bq_table": "raw_bridges_tunnels",
     },
     "stations": {

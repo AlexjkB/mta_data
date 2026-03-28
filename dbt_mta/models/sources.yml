@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw
+    database: mta-data-491403
+    schema: mta_warehouse
+    tables:
+      - name: raw_daily_ridership
+        description: Daily ridership totals across all MTA services
+      - name: raw_subway_hourly
+        description: Hourly subway ridership by station and fare class
+      - name: raw_bus_hourly
+        description: Hourly bus ridership by route and fare class
+      - name: raw_bridges_tunnels
+        description: Daily bridge/tunnel traffic by vehicle class
+      - name: raw_stations
+        description: Reference table of subway station complexes

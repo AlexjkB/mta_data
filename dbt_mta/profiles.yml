@@ -1,0 +1,11 @@
+dbt_mta:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: mta-data-491403
+      dataset: mta_warehouse
+      location: us-east1
+      keyfile: /home/kida/Documents/important/mta-data-491403-e5d74ad1f2df.json
+      threads: 4

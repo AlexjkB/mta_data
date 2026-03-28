@@ -1,0 +1,2361 @@
+[0m14:58:15.300281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d26cf3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d148ee90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d148ee00>]}
+
+
+============================== 14:58:15.313347 | f567f32f-2e49-436d-bfc9-f5ac1d0bb173 ==============================
+[0m14:58:15.313347 [info ] [MainThread]: Running with dbt=1.11.7
+[0m14:58:15.314022 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'debug': 'False', 'invocation_command': 'dbt deps', 'version_check': 'True', 'log_path': '/home/kida/Documents/mta_data/dbt_mta/logs', 'log_format': 'default', 'introspect': 'True', 'write_json': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'warn_error': 'None', 'profiles_dir': '/home/kida/Documents/mta_data/dbt_mta', 'target_path': 'None', 'use_colors': 'True', 'empty': 'None', 'fail_fast': 'False', 'partial_parse': 'True'}
+[0m14:58:15.490879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f567f32f-2e49-436d-bfc9-f5ac1d0bb173', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d148eb00>]}
+[0m14:58:15.503148 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-9yx0gk53'
+[0m14:58:15.503897 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m14:58:15.982068 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m14:58:15.984539 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m14:58:16.122122 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m14:58:16.148313 [info ] [MainThread]: Updating lock file in file path: /home/kida/Documents/mta_data/dbt_mta/package-lock.yml
+[0m14:58:16.151261 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-4dpqlbmm'
+[0m14:58:16.156881 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m14:58:16.656137 [info ] [MainThread]: Installed from version 1.3.3
+[0m14:58:16.656906 [info ] [MainThread]: Up to date!
+[0m14:58:16.657388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'f567f32f-2e49-436d-bfc9-f5ac1d0bb173', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d23836a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d1133700>]}
+[0m14:58:16.658629 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.4471179, "process_in_blocks": "1968", "process_kernel_time": 0.159027, "process_mem_max_rss": "103760", "process_out_blocks": "2328", "process_user_time": 2.332405}
+[0m14:58:16.659204 [debug] [MainThread]: Command `dbt deps` succeeded at 14:58:16.659085 after 1.45 seconds
+[0m14:58:16.659643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d26cf3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d2381d20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b03d2762080>]}
+[0m14:58:16.660135 [debug] [MainThread]: Flushing usage events
+[0m14:58:17.033975 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:00:34.839373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d34522bf400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3451088bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3451088b50>]}
+
+
+============================== 15:00:34.842418 | 29734d70-c5b4-4b92-b477-0e41fc8848b0 ==============================
+[0m15:00:34.842418 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:00:34.843216 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/kida/Documents/mta_data/dbt_mta/logs', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'static_parser': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'debug': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'write_json': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'partial_parse': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/home/kida/Documents/mta_data/dbt_mta', 'indirect_selection': 'eager'}
+[0m15:00:36.139637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3451088c40>]}
+[0m15:00:36.246989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d345108a290>]}
+[0m15:00:36.247829 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m15:00:36.458950 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:00:36.460331 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:00:36.460907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342bc30f70>]}
+[0m15:00:38.940954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a899150>]}
+[0m15:00:39.086454 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:00:39.088530 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:00:39.118394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a8c0a90>]}
+[0m15:00:39.119115 [info ] [MainThread]: Found 13 models, 5 sources, 654 macros
+[0m15:00:39.119625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a8c28c0>]}
+[0m15:00:39.122121 [info ] [MainThread]: 
+[0m15:00:39.122621 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:00:39.123073 [info ] [MainThread]: 
+[0m15:00:39.123708 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:00:39.130684 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_mta-data-491403'
+[0m15:00:39.131634 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:00:39.831881 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_mta-data-491403, now list_mta-data-491403_mta_warehouse)
+[0m15:00:39.833320 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:00:40.460313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342bff7f40>]}
+[0m15:00:40.462968 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:00:40.540514 [debug] [Thread-1 (]: Began running node model.dbt_mta.dim_calendar
+[0m15:00:40.543798 [debug] [Thread-2 (]: Began running node model.dbt_mta.stg_bridges_tunnels
+[0m15:00:40.545809 [debug] [Thread-3 (]: Began running node model.dbt_mta.stg_bus_hourly
+[0m15:00:40.546658 [debug] [Thread-4 (]: Began running node model.dbt_mta.stg_daily_ridership
+[0m15:00:40.547551 [info ] [Thread-1 (]: 1 of 13 START sql table model mta_warehouse.dim_calendar ....................... [RUN]
+[0m15:00:40.548463 [info ] [Thread-2 (]: 2 of 13 START sql view model mta_warehouse.stg_bridges_tunnels ................. [RUN]
+[0m15:00:40.549385 [info ] [Thread-3 (]: 3 of 13 START sql view model mta_warehouse.stg_bus_hourly ...................... [RUN]
+[0m15:00:40.550235 [info ] [Thread-4 (]: 4 of 13 START sql view model mta_warehouse.stg_daily_ridership ................. [RUN]
+[0m15:00:40.551035 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mta-data-491403_mta_warehouse, now model.dbt_mta.dim_calendar)
+[0m15:00:40.551881 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_bridges_tunnels'
+[0m15:00:40.552667 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_bus_hourly'
+[0m15:00:40.553454 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_daily_ridership'
+[0m15:00:40.554239 [debug] [Thread-1 (]: Began compiling node model.dbt_mta.dim_calendar
+[0m15:00:40.554954 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.stg_bridges_tunnels
+[0m15:00:40.555546 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.stg_bus_hourly
+[0m15:00:40.556177 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.stg_daily_ridership
+[0m15:00:40.571149 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.stg_bridges_tunnels"
+[0m15:00:40.579198 [debug] [Thread-1 (]: On model.dbt_mta.dim_calendar: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_calendar"} */
+
+
+        select 
+
+    datetime_diff(
+        cast(cast(current_date() as date) as datetime),
+        cast(cast('2020-01-01' as date) as datetime),
+        day
+    )
+
+  
+[0m15:00:40.583627 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.stg_bus_hourly"
+[0m15:00:40.587857 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.stg_daily_ridership"
+[0m15:00:40.588810 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:00:40.590295 [debug] [Thread-3 (]: Began executing node model.dbt_mta.stg_bus_hourly
+[0m15:00:40.591074 [debug] [Thread-4 (]: Began executing node model.dbt_mta.stg_daily_ridership
+[0m15:00:40.591826 [debug] [Thread-2 (]: Began executing node model.dbt_mta.stg_bridges_tunnels
+[0m15:00:40.688518 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.stg_daily_ridership"
+[0m15:00:40.691424 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.stg_bus_hourly"
+[0m15:00:40.696249 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.stg_bridges_tunnels"
+[0m15:00:40.698096 [debug] [Thread-4 (]: On model.dbt_mta.stg_daily_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_daily_ridership"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_daily_ridership`
+),
+
+renamed as (
+    select
+        cast(date as date) as ride_date,
+        cast(subways_total_estimated_ridership as int64) as subway_ridership,
+        cast(subways_of_comparable_pre_pandemic_day as float64) as subway_pct_pre_pandemic,
+        cast(buses_total_estimated_ridersip as int64) as bus_ridership,
+        cast(buses_of_comparable_pre_pandemic_day as float64) as bus_pct_pre_pandemic,
+        cast(lirr_total_estimated_ridership as int64) as lirr_ridership,
+        cast(lirr_of_comparable_pre_pandemic_day as float64) as lirr_pct_pre_pandemic,
+        cast(metro_north_total_estimated_ridership as int64) as metro_north_ridership,
+        cast(metro_north_of_comparable_pre_pandemic_day as float64) as metro_north_pct_pre_pandemic,
+        cast(access_a_ride_total_scheduled_trips as int64) as access_a_ride_ridership,
+        cast(bridges_and_tunnels_total_traffic as int64) as bridges_tunnels_traffic,
+        cast(staten_island_railway_total_estimated_ridership as int64) as sir_ridership
+    from source
+    where date is not null
+)
+
+select * from renamed;
+
+
+[0m15:00:40.699409 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:00:40.700575 [debug] [Thread-3 (]: On model.dbt_mta.stg_bus_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_bus_hourly"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_bus_hourly`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_bus_hourly`
+),
+
+renamed as (
+    select
+        cast(transit_timestamp as timestamp) as transit_ts,
+        cast(transit_timestamp as date) as transit_date,
+        extract(hour from cast(transit_timestamp as timestamp)) as transit_hour,
+        extract(dayofweek from cast(transit_timestamp as timestamp)) as day_of_week,
+        bus_route,
+        fare_class_category,
+        payment_method,
+        cast(ridership as int64) as ridership,
+        cast(transfers as int64) as transfers
+    from source
+    where transit_timestamp is not null
+)
+
+select * from renamed;
+
+
+[0m15:00:40.701666 [debug] [Thread-2 (]: On model.dbt_mta.stg_bridges_tunnels: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_bridges_tunnels"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_bridges_tunnels`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_bridges_tunnels`
+),
+
+renamed as (
+    select
+        plaza,
+        cast(collection_date as date) as collection_date,
+        cast(day_of_week as int64) as day_of_week,
+        cast(holiday as int64) as is_holiday,
+        cast(total as int64) as total_traffic,
+        cast(class_1 as int64) as passenger_vehicles,
+        cast(class_2 as int64) as class_2_vehicles,
+        cast(class_3 as int64) as class_3_vehicles
+    from source
+    where collection_date is not null
+)
+
+select * from renamed;
+
+
+[0m15:00:40.702254 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:00:40.739899 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:00:41.567169 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:b23895e8-5a89-4b90-bc4a-f46707317145&page=queryresults
+[0m15:00:41.593684 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:471e8143-b72f-46f0-a4c6-cb718fbe5600&page=queryresults
+[0m15:00:41.898993 [debug] [Thread-3 (]: SQL status: OK in 0.303 seconds
+[0m15:00:41.920787 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:83a478de-bb17-4251-82d7-73ef04d072bb&page=queryresults
+[0m15:00:41.930059 [debug] [Thread-4 (]: SQL status: OK in 0.359 seconds
+[0m15:00:42.002885 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a869690>]}
+[0m15:00:42.003580 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a869570>]}
+[0m15:00:42.004621 [info ] [Thread-3 (]: 3 of 13 OK created sql view model mta_warehouse.stg_bus_hourly ................. [[32mCREATE VIEW (0 processed)[0m in 1.45s]
+[0m15:00:42.005668 [info ] [Thread-4 (]: 4 of 13 OK created sql view model mta_warehouse.stg_daily_ridership ............ [[32mCREATE VIEW (0 processed)[0m in 1.45s]
+[0m15:00:42.006642 [debug] [Thread-3 (]: Finished running node model.dbt_mta.stg_bus_hourly
+[0m15:00:42.007532 [debug] [Thread-4 (]: Finished running node model.dbt_mta.stg_daily_ridership
+[0m15:00:42.008309 [debug] [Thread-3 (]: Began running node model.dbt_mta.stg_stations
+[0m15:00:42.009151 [debug] [Thread-4 (]: Began running node model.dbt_mta.stg_subway_hourly
+[0m15:00:42.010268 [info ] [Thread-3 (]: 5 of 13 START sql view model mta_warehouse.stg_stations ........................ [RUN]
+[0m15:00:42.011106 [info ] [Thread-4 (]: 6 of 13 START sql view model mta_warehouse.stg_subway_hourly ................... [RUN]
+[0m15:00:42.011905 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_bus_hourly, now model.dbt_mta.stg_stations)
+[0m15:00:42.012610 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_daily_ridership, now model.dbt_mta.stg_subway_hourly)
+[0m15:00:42.013322 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.stg_stations
+[0m15:00:42.013949 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.stg_subway_hourly
+[0m15:00:42.018837 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.stg_stations"
+[0m15:00:42.024554 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.stg_subway_hourly"
+[0m15:00:42.025915 [debug] [Thread-3 (]: Began executing node model.dbt_mta.stg_stations
+[0m15:00:42.030693 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.stg_stations"
+[0m15:00:42.031344 [debug] [Thread-4 (]: Began executing node model.dbt_mta.stg_subway_hourly
+[0m15:00:42.036112 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.stg_subway_hourly"
+[0m15:00:42.036869 [debug] [Thread-3 (]: On model.dbt_mta.stg_stations: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_stations"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_stations`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_stations`
+),
+
+renamed as (
+    select
+        complex_id as station_complex_id,
+        display_name as station_complex_name,
+        borough,
+        daytime_routes,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude,
+        cast(ada as boolean) as is_ada_accessible
+    from source
+)
+
+select * from renamed;
+
+
+[0m15:00:42.038045 [debug] [Thread-4 (]: On model.dbt_mta.stg_subway_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_subway_hourly"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_subway_hourly`
+),
+
+renamed as (
+    select
+        cast(transit_timestamp as timestamp) as transit_ts,
+        cast(transit_timestamp as date) as transit_date,
+        extract(hour from cast(transit_timestamp as timestamp)) as transit_hour,
+        extract(dayofweek from cast(transit_timestamp as timestamp)) as day_of_week,
+        station_complex_id,
+        station_complex as station_complex_name,
+        borough,
+        fare_class_category,
+        payment_method,
+        cast(ridership as int64) as ridership,
+        cast(transfers as int64) as transfers,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude
+    from source
+    where transit_timestamp is not null
+)
+
+select * from renamed;
+
+
+[0m15:00:42.038698 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:00:42.039369 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:00:42.152014 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:fd786827-0f57-41d2-a93a-dbcada4a9d29&page=queryresults
+[0m15:00:42.323748 [debug] [Thread-2 (]: SQL status: OK in 0.401 seconds
+[0m15:00:42.335528 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a8691e0>]}
+[0m15:00:42.337389 [info ] [Thread-2 (]: 2 of 13 OK created sql view model mta_warehouse.stg_bridges_tunnels ............ [[32mCREATE VIEW (0 processed)[0m in 1.78s]
+[0m15:00:42.338768 [debug] [Thread-2 (]: Finished running node model.dbt_mta.stg_bridges_tunnels
+[0m15:00:42.339611 [debug] [Thread-2 (]: Began running node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:00:42.340684 [info ] [Thread-2 (]: 7 of 13 START sql view model mta_warehouse.int_ridership_daily_by_mode ......... [RUN]
+[0m15:00:42.341863 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_bridges_tunnels, now model.dbt_mta.int_ridership_daily_by_mode)
+[0m15:00:42.342875 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:00:42.350754 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.int_ridership_daily_by_mode"
+[0m15:00:42.352880 [debug] [Thread-1 (]: SQL status: OK in 0.198 seconds
+[0m15:00:42.355519 [debug] [Thread-2 (]: Began executing node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:00:42.361263 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.int_ridership_daily_by_mode"
+[0m15:00:42.362398 [debug] [Thread-2 (]: On model.dbt_mta.int_ridership_daily_by_mode: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_ridership_daily_by_mode"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode`
+  OPTIONS()
+  as select ride_date, 'Subway' as transport_mode, subway_ridership as ridership, subway_pct_pre_pandemic as pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Bus', bus_ridership, bus_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'LIRR', lirr_ridership, lirr_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Metro-North', metro_north_ridership, metro_north_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'SIR', sir_ridership, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Access-A-Ride', access_a_ride_ridership, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Bridges & Tunnels', bridges_tunnels_traffic, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`;
+
+
+[0m15:00:42.363113 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:00:42.808479 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mta.dim_calendar"
+[0m15:00:42.813034 [debug] [Thread-1 (]: Began executing node model.dbt_mta.dim_calendar
+[0m15:00:42.881563 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mta.dim_calendar"
+[0m15:00:42.882716 [debug] [Thread-1 (]: On model.dbt_mta.dim_calendar: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_calendar"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`dim_calendar`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with date_spine as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+     + 
+    
+    p11.generated_number * power(2, 11)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+     cross join 
+    
+    p as p11
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 2278
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+        datetime_add(
+            cast( cast('2020-01-01' as date) as datetime),
+        interval row_number() over (order by generated_number) - 1 day
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast(current_date() as date)
+
+)
+
+select * from filtered
+
+
+),
+
+enriched as (
+    select
+        cast(date_day as date) as date_day,
+        extract(year from date_day) as year,
+        extract(quarter from date_day) as quarter,
+        extract(month from date_day) as month,
+        format_date('%B', date_day) as month_name,
+        format_date('%A', date_day) as day_name,
+        extract(dayofweek from date_day) in (1, 7) as is_weekend
+    from date_spine
+)
+
+select * from enriched
+    );
+  
+[0m15:00:42.931638 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:f7e4f8d8-a47c-442d-87ca-2b68f4851b9d&page=queryresults
+[0m15:00:43.145637 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:6cb9f87a-41f8-4506-ab28-3c8a38d81567&page=queryresults
+[0m15:00:43.226912 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:d0ef779a-8287-44d4-aaf6-086e3dd3b36e&page=queryresults
+[0m15:00:43.261638 [debug] [Thread-4 (]: SQL status: OK in 0.329 seconds
+[0m15:00:43.275596 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3452319db0>]}
+[0m15:00:43.279012 [info ] [Thread-4 (]: 6 of 13 OK created sql view model mta_warehouse.stg_subway_hourly .............. [[32mCREATE VIEW (0 processed)[0m in 1.26s]
+[0m15:00:43.281313 [debug] [Thread-4 (]: Finished running node model.dbt_mta.stg_subway_hourly
+[0m15:00:43.282885 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:9582ad96-7a74-4094-b656-1b96f4bb839d&page=queryresults
+[0m15:00:43.287441 [debug] [Thread-4 (]: Began running node model.dbt_mta.int_station_daily_totals
+[0m15:00:43.290763 [info ] [Thread-4 (]: 8 of 13 START sql view model mta_warehouse.int_station_daily_totals ............ [RUN]
+[0m15:00:43.291907 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_subway_hourly, now model.dbt_mta.int_station_daily_totals)
+[0m15:00:43.292805 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.int_station_daily_totals
+[0m15:00:43.298383 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.int_station_daily_totals"
+[0m15:00:43.299376 [debug] [Thread-4 (]: Began executing node model.dbt_mta.int_station_daily_totals
+[0m15:00:43.308641 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.int_station_daily_totals"
+[0m15:00:43.309960 [debug] [Thread-4 (]: On model.dbt_mta.int_station_daily_totals: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_station_daily_totals"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_station_daily_totals`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    sum(ridership) as daily_ridership,
+    sum(transfers) as daily_transfers
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3;
+
+
+[0m15:00:43.310809 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:00:43.671296 [debug] [Thread-3 (]: SQL status: OK in 0.525 seconds
+[0m15:00:43.677015 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a868a90>]}
+[0m15:00:43.678074 [info ] [Thread-3 (]: 5 of 13 OK created sql view model mta_warehouse.stg_stations ................... [[32mCREATE VIEW (0 processed)[0m in 1.66s]
+[0m15:00:43.678990 [debug] [Thread-3 (]: Finished running node model.dbt_mta.stg_stations
+[0m15:00:43.679643 [debug] [Thread-3 (]: Began running node model.dbt_mta.int_subway_peak_hours
+[0m15:00:43.680472 [info ] [Thread-3 (]: 9 of 13 START sql view model mta_warehouse.int_subway_peak_hours ............... [RUN]
+[0m15:00:43.681189 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_stations, now model.dbt_mta.int_subway_peak_hours)
+[0m15:00:43.681922 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.int_subway_peak_hours
+[0m15:00:43.687990 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:00:43.693411 [debug] [Thread-3 (]: Began executing node model.dbt_mta.int_subway_peak_hours
+[0m15:00:43.701018 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:00:43.702157 [debug] [Thread-3 (]: On model.dbt_mta.int_subway_peak_hours: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_subway_peak_hours"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_subway_peak_hours`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    transit_hour,
+    sum(ridership) as total_ridership,
+    case
+        when transit_hour between 7 and 9 then 'AM Peak'
+        when transit_hour between 17 and 19 then 'PM Peak'
+        when transit_hour between 10 and 16 then 'Midday'
+        when transit_hour between 20 and 23 then 'Evening'
+        else 'Overnight'
+    end as time_period
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3, 4;
+
+
+[0m15:00:43.703108 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:00:43.753077 [debug] [Thread-2 (]: SQL status: OK in 0.467 seconds
+[0m15:00:43.758076 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3428683730>]}
+[0m15:00:43.759172 [info ] [Thread-2 (]: 7 of 13 OK created sql view model mta_warehouse.int_ridership_daily_by_mode .... [[32mCREATE VIEW (0 processed)[0m in 1.42s]
+[0m15:00:43.760367 [debug] [Thread-2 (]: Finished running node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:00:43.761197 [debug] [Thread-2 (]: Began running node model.dbt_mta.dim_stations
+[0m15:00:43.763246 [info ] [Thread-2 (]: 10 of 13 START sql table model mta_warehouse.dim_stations ...................... [RUN]
+[0m15:00:43.767290 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_ridership_daily_by_mode, now model.dbt_mta.dim_stations)
+[0m15:00:43.768045 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.dim_stations
+[0m15:00:43.772679 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.dim_stations"
+[0m15:00:43.773437 [debug] [Thread-2 (]: Began executing node model.dbt_mta.dim_stations
+[0m15:00:43.778556 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.dim_stations"
+[0m15:00:43.779868 [debug] [Thread-2 (]: On model.dbt_mta.dim_stations: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_stations"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`dim_stations`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    station_complex_id,
+    station_complex_name,
+    borough,
+    daytime_routes,
+    latitude,
+    longitude,
+    is_ada_accessible
+from `mta-data-491403`.`mta_warehouse`.`stg_stations`
+    );
+  
+[0m15:00:43.780550 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:00:44.413457 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:0ca95e10-f4ba-4a41-9e4d-3457ef9cffe3&page=queryresults
+[0m15:00:44.548108 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:0d746cad-d42a-4bc2-9957-12452e6deb3e&page=queryresults
+[0m15:00:44.750602 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:e72144d3-6962-4089-8ea0-46e822d62e67&page=queryresults
+[0m15:00:44.778493 [debug] [Thread-4 (]: SQL status: OK in 0.364 seconds
+[0m15:00:44.797057 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3428146620>]}
+[0m15:00:44.799090 [info ] [Thread-4 (]: 8 of 13 OK created sql view model mta_warehouse.int_station_daily_totals ....... [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m15:00:44.801166 [debug] [Thread-4 (]: Finished running node model.dbt_mta.int_station_daily_totals
+[0m15:00:44.802856 [debug] [Thread-4 (]: Began running node model.dbt_mta.fct_monthly_trends
+[0m15:00:44.804720 [info ] [Thread-4 (]: 11 of 13 START sql table model mta_warehouse.fct_monthly_trends ................ [RUN]
+[0m15:00:44.806375 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_station_daily_totals, now model.dbt_mta.fct_monthly_trends)
+[0m15:00:44.808345 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.fct_monthly_trends
+[0m15:00:44.817321 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.fct_monthly_trends"
+[0m15:00:44.818927 [debug] [Thread-4 (]: Began executing node model.dbt_mta.fct_monthly_trends
+[0m15:00:44.827780 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.fct_monthly_trends"
+[0m15:00:44.829004 [debug] [Thread-4 (]: On model.dbt_mta.fct_monthly_trends: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_monthly_trends"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_monthly_trends`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    date_trunc(ride_date, month) as month_start,
+    transport_mode,
+    sum(ridership) as monthly_ridership,
+    avg(pct_pre_pandemic) as avg_pct_pre_pandemic,
+    count(*) as days_in_month
+from `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode`
+group by 1, 2
+    );
+  
+[0m15:00:44.830031 [debug] [Thread-3 (]: SQL status: OK in 0.279 seconds
+[0m15:00:44.830814 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:00:44.838834 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d34281a4640>]}
+[0m15:00:44.841038 [info ] [Thread-3 (]: 9 of 13 OK created sql view model mta_warehouse.int_subway_peak_hours .......... [[32mCREATE VIEW (0 processed)[0m in 1.16s]
+[0m15:00:44.891213 [debug] [Thread-3 (]: Finished running node model.dbt_mta.int_subway_peak_hours
+[0m15:00:45.052440 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:e72144d3-6962-4089-8ea0-46e822d62e67&page=queryresults
+[0m15:00:45.080036 [debug] [Thread-2 (]: Database Error in model dim_stations (models/marts/dim_stations.sql)
+  Bad bool value: 0
+  compiled code at target/run/dbt_mta/models/marts/dim_stations.sql
+[0m15:00:45.081983 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d34281e7400>]}
+[0m15:00:45.084197 [error] [Thread-2 (]: 10 of 13 ERROR creating sql table model mta_warehouse.dim_stations ............. [[31mERROR[0m in 1.32s]
+[0m15:00:45.086611 [debug] [Thread-2 (]: Finished running node model.dbt_mta.dim_stations
+[0m15:00:45.089008 [debug] [Thread-7 (]: Marking all children of 'model.dbt_mta.dim_stations' to be skipped because of status 'error'.  Reason: Database Error in model dim_stations (models/marts/dim_stations.sql)
+  Bad bool value: 0
+  compiled code at target/run/dbt_mta/models/marts/dim_stations.sql.
+[0m15:00:45.093457 [debug] [Thread-3 (]: Began running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:00:45.095185 [info ] [Thread-3 (]: 12 of 13 SKIP relation mta_warehouse.fct_hourly_station_ridership .............. [[33mSKIP[0m]
+[0m15:00:45.097029 [debug] [Thread-3 (]: Finished running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:00:45.596181 [debug] [Thread-1 (]: SQL status: OK in 2.367 seconds
+[0m15:00:45.838334 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342810f4c0>]}
+[0m15:00:45.842312 [info ] [Thread-1 (]: 1 of 13 OK created sql table model mta_warehouse.dim_calendar .................. [[32mCREATE TABLE (2.3k rows, 0 processed)[0m in 5.28s]
+[0m15:00:45.844947 [debug] [Thread-1 (]: Finished running node model.dbt_mta.dim_calendar
+[0m15:00:45.847191 [debug] [Thread-2 (]: Began running node model.dbt_mta.fct_daily_ridership
+[0m15:00:45.848764 [info ] [Thread-2 (]: 13 of 13 START sql table model mta_warehouse.fct_daily_ridership ............... [RUN]
+[0m15:00:45.850195 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.dim_stations, now model.dbt_mta.fct_daily_ridership)
+[0m15:00:45.851369 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.fct_daily_ridership
+[0m15:00:45.862660 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.fct_daily_ridership"
+[0m15:00:45.863735 [debug] [Thread-2 (]: Began executing node model.dbt_mta.fct_daily_ridership
+[0m15:00:45.869319 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.fct_daily_ridership"
+[0m15:00:45.870319 [debug] [Thread-2 (]: On model.dbt_mta.fct_daily_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_daily_ridership"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_daily_ridership`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    r.ride_date,
+    r.transport_mode,
+    r.ridership,
+    r.pct_pre_pandemic,
+    c.day_name,
+    c.is_weekend,
+    c.month_name,
+    c.quarter,
+    c.year
+from `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode` r
+left join `mta-data-491403`.`mta_warehouse`.`dim_calendar` c
+    on r.ride_date = c.date_day
+    );
+  
+[0m15:00:45.871182 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:00:45.923162 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:ce2f8cad-83c8-4448-be03-862915fad7d5&page=queryresults
+[0m15:00:46.212961 [error] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:ce2f8cad-83c8-4448-be03-862915fad7d5&page=queryresults
+[0m15:00:46.216279 [debug] [Thread-4 (]: Database Error in model fct_monthly_trends (models/marts/fct_monthly_trends.sql)
+  Invalid date: '2020-04-01T00:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_monthly_trends.sql
+[0m15:00:46.217079 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3428145ed0>]}
+[0m15:00:46.218237 [error] [Thread-4 (]: 11 of 13 ERROR creating sql table model mta_warehouse.fct_monthly_trends ....... [[31mERROR[0m in 1.41s]
+[0m15:00:46.219259 [debug] [Thread-4 (]: Finished running node model.dbt_mta.fct_monthly_trends
+[0m15:00:46.220033 [debug] [Thread-7 (]: Marking all children of 'model.dbt_mta.fct_monthly_trends' to be skipped because of status 'error'.  Reason: Database Error in model fct_monthly_trends (models/marts/fct_monthly_trends.sql)
+  Invalid date: '2020-04-01T00:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_monthly_trends.sql.
+[0m15:00:46.798580 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:9f81a831-7001-409a-af38-3b0d2a119ebc&page=queryresults
+[0m15:00:47.085661 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:9f81a831-7001-409a-af38-3b0d2a119ebc&page=queryresults
+[0m15:00:47.093258 [debug] [Thread-2 (]: Database Error in model fct_daily_ridership (models/marts/fct_daily_ridership.sql)
+  Invalid date: '2020-04-01T00:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_daily_ridership.sql
+[0m15:00:47.095268 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '29734d70-c5b4-4b92-b477-0e41fc8848b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d3423749a20>]}
+[0m15:00:47.097493 [error] [Thread-2 (]: 13 of 13 ERROR creating sql table model mta_warehouse.fct_daily_ridership ...... [[31mERROR[0m in 1.24s]
+[0m15:00:47.099600 [debug] [Thread-2 (]: Finished running node model.dbt_mta.fct_daily_ridership
+[0m15:00:47.101527 [debug] [Thread-7 (]: Marking all children of 'model.dbt_mta.fct_daily_ridership' to be skipped because of status 'error'.  Reason: Database Error in model fct_daily_ridership (models/marts/fct_daily_ridership.sql)
+  Invalid date: '2020-04-01T00:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_daily_ridership.sql.
+[0m15:00:47.105154 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:00:47.176895 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:00:47.177484 [debug] [MainThread]: Connection 'model.dbt_mta.dim_calendar' was properly closed.
+[0m15:00:47.177930 [debug] [MainThread]: Connection 'model.dbt_mta.fct_daily_ridership' was properly closed.
+[0m15:00:47.178336 [debug] [MainThread]: Connection 'model.dbt_mta.int_subway_peak_hours' was properly closed.
+[0m15:00:47.178759 [debug] [MainThread]: Connection 'model.dbt_mta.fct_monthly_trends' was properly closed.
+[0m15:00:47.179326 [info ] [MainThread]: 
+[0m15:00:47.179799 [info ] [MainThread]: Finished running 5 table models, 8 view models in 0 hours 0 minutes and 8.06 seconds (8.06s).
+[0m15:00:47.184059 [debug] [MainThread]: Command end result
+[0m15:00:47.369567 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:00:47.372487 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:00:47.384949 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kida/Documents/mta_data/dbt_mta/target/run_results.json
+[0m15:00:47.385573 [info ] [MainThread]: 
+[0m15:00:47.386196 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m15:00:47.386891 [info ] [MainThread]: 
+[0m15:00:47.387531 [error] [MainThread]: [31mFailure in model dim_stations (models/marts/dim_stations.sql)[0m
+[0m15:00:47.388256 [error] [MainThread]:   Database Error in model dim_stations (models/marts/dim_stations.sql)
+  Bad bool value: 0
+  compiled code at target/run/dbt_mta/models/marts/dim_stations.sql
+[0m15:00:47.388831 [info ] [MainThread]: 
+[0m15:00:47.389486 [info ] [MainThread]:   compiled code at target/compiled/dbt_mta/models/marts/dim_stations.sql
+[0m15:00:47.390485 [info ] [MainThread]: 
+[0m15:00:47.392253 [error] [MainThread]: [31mFailure in model fct_monthly_trends (models/marts/fct_monthly_trends.sql)[0m
+[0m15:00:47.394743 [error] [MainThread]:   Database Error in model fct_monthly_trends (models/marts/fct_monthly_trends.sql)
+  Invalid date: '2020-04-01T00:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_monthly_trends.sql
+[0m15:00:47.396454 [info ] [MainThread]: 
+[0m15:00:47.397317 [info ] [MainThread]:   compiled code at target/compiled/dbt_mta/models/marts/fct_monthly_trends.sql
+[0m15:00:47.397905 [info ] [MainThread]: 
+[0m15:00:47.398570 [error] [MainThread]: [31mFailure in model fct_daily_ridership (models/marts/fct_daily_ridership.sql)[0m
+[0m15:00:47.399242 [error] [MainThread]:   Database Error in model fct_daily_ridership (models/marts/fct_daily_ridership.sql)
+  Invalid date: '2020-04-01T00:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_daily_ridership.sql
+[0m15:00:47.399790 [info ] [MainThread]: 
+[0m15:00:47.400451 [info ] [MainThread]:   compiled code at target/compiled/dbt_mta/models/marts/fct_daily_ridership.sql
+[0m15:00:47.401038 [info ] [MainThread]: 
+[0m15:00:47.401793 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=3 SKIP=1 NO-OP=0 TOTAL=13
+[0m15:00:47.403324 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 12.661662, "process_in_blocks": "2136", "process_kernel_time": 0.360296, "process_mem_max_rss": "242440", "process_out_blocks": "4672", "process_user_time": 10.928675}
+[0m15:00:47.404510 [debug] [MainThread]: Command `dbt run` failed at 15:00:47.404309 after 12.66 seconds
+[0m15:00:47.405215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d34522bf400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a808730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d342a809000>]}
+[0m15:00:47.405866 [debug] [MainThread]: Flushing usage events
+[0m15:00:47.888687 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:01:41.467625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b343ddb460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b342ba0c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b342ba0bb0>]}
+
+
+============================== 15:01:41.470606 | 7eba2801-aa38-4278-941a-0c9788807f3d ==============================
+[0m15:01:41.470606 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:01:41.471262 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'partial_parse': 'True', 'log_format': 'default', 'debug': 'False', 'printer_width': '80', 'version_check': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'profiles_dir': '/home/kida/Documents/mta_data/dbt_mta', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'empty': 'False', 'no_print': 'None', 'fail_fast': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'cache_selected_only': 'False', 'use_colors': 'True', 'introspect': 'True', 'static_parser': 'True', 'log_path': '/home/kida/Documents/mta_data/dbt_mta/logs'}
+[0m15:01:42.623509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b342af9750>]}
+[0m15:01:42.726985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b342ba22f0>]}
+[0m15:01:42.727848 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m15:01:42.909630 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:01:43.076623 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m15:01:43.077411 [debug] [MainThread]: Partial parsing: updated file: dbt_mta://models/staging/stg_stations.sql
+[0m15:01:43.077984 [debug] [MainThread]: Partial parsing: updated file: dbt_mta://models/staging/stg_daily_ridership.sql
+[0m15:01:43.467654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31c3d7df0>]}
+[0m15:01:43.598747 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:01:43.601697 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:01:43.723455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31d3b3ca0>]}
+[0m15:01:43.724402 [info ] [MainThread]: Found 13 models, 5 sources, 654 macros
+[0m15:01:43.725079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b344595bd0>]}
+[0m15:01:43.728462 [info ] [MainThread]: 
+[0m15:01:43.729410 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:01:43.730073 [info ] [MainThread]: 
+[0m15:01:43.731106 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:01:43.740270 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_mta-data-491403'
+[0m15:01:43.741125 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:01:44.313104 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_mta-data-491403, now list_mta-data-491403_mta_warehouse)
+[0m15:01:44.314396 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:01:44.875183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b345927fd0>]}
+[0m15:01:44.877002 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:01:44.941012 [debug] [Thread-1 (]: Began running node model.dbt_mta.dim_calendar
+[0m15:01:44.941840 [info ] [Thread-1 (]: 1 of 13 START sql table model mta_warehouse.dim_calendar ....................... [RUN]
+[0m15:01:44.942431 [debug] [Thread-2 (]: Began running node model.dbt_mta.stg_bridges_tunnels
+[0m15:01:44.942984 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mta-data-491403_mta_warehouse, now model.dbt_mta.dim_calendar)
+[0m15:01:44.943550 [debug] [Thread-3 (]: Began running node model.dbt_mta.stg_bus_hourly
+[0m15:01:44.944159 [debug] [Thread-4 (]: Began running node model.dbt_mta.stg_daily_ridership
+[0m15:01:44.944915 [info ] [Thread-2 (]: 2 of 13 START sql view model mta_warehouse.stg_bridges_tunnels ................. [RUN]
+[0m15:01:44.945559 [debug] [Thread-1 (]: Began compiling node model.dbt_mta.dim_calendar
+[0m15:01:44.946244 [info ] [Thread-3 (]: 3 of 13 START sql view model mta_warehouse.stg_bus_hourly ...................... [RUN]
+[0m15:01:44.946952 [info ] [Thread-4 (]: 4 of 13 START sql view model mta_warehouse.stg_daily_ridership ................. [RUN]
+[0m15:01:44.947701 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_bridges_tunnels'
+[0m15:01:44.969209 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_bus_hourly'
+[0m15:01:44.991009 [debug] [Thread-1 (]: On model.dbt_mta.dim_calendar: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_calendar"} */
+
+
+        select 
+
+    datetime_diff(
+        cast(cast(current_date() as date) as datetime),
+        cast(cast('2020-01-01' as date) as datetime),
+        day
+    )
+
+  
+[0m15:01:44.993718 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_daily_ridership'
+[0m15:01:44.994682 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.stg_bridges_tunnels
+[0m15:01:44.995739 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.stg_bus_hourly
+[0m15:01:44.996582 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:01:44.997184 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.stg_daily_ridership
+[0m15:01:45.004645 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.stg_bridges_tunnels"
+[0m15:01:45.012151 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.stg_bus_hourly"
+[0m15:01:45.056591 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.stg_daily_ridership"
+[0m15:01:45.060552 [debug] [Thread-2 (]: Began executing node model.dbt_mta.stg_bridges_tunnels
+[0m15:01:45.077778 [debug] [Thread-4 (]: Began executing node model.dbt_mta.stg_daily_ridership
+[0m15:01:45.099864 [debug] [Thread-3 (]: Began executing node model.dbt_mta.stg_bus_hourly
+[0m15:01:45.112354 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.stg_bridges_tunnels"
+[0m15:01:45.116575 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.stg_bus_hourly"
+[0m15:01:45.118340 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.stg_daily_ridership"
+[0m15:01:45.119856 [debug] [Thread-3 (]: On model.dbt_mta.stg_bus_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_bus_hourly"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_bus_hourly`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_bus_hourly`
+),
+
+renamed as (
+    select
+        cast(transit_timestamp as timestamp) as transit_ts,
+        cast(transit_timestamp as date) as transit_date,
+        extract(hour from cast(transit_timestamp as timestamp)) as transit_hour,
+        extract(dayofweek from cast(transit_timestamp as timestamp)) as day_of_week,
+        bus_route,
+        fare_class_category,
+        payment_method,
+        cast(ridership as int64) as ridership,
+        cast(transfers as int64) as transfers
+    from source
+    where transit_timestamp is not null
+)
+
+select * from renamed;
+
+
+[0m15:01:45.120795 [debug] [Thread-4 (]: On model.dbt_mta.stg_daily_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_daily_ridership"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_daily_ridership`
+),
+
+renamed as (
+    select
+        cast(cast(date as timestamp) as date) as ride_date,
+        cast(subways_total_estimated_ridership as int64) as subway_ridership,
+        cast(subways_of_comparable_pre_pandemic_day as float64) as subway_pct_pre_pandemic,
+        cast(buses_total_estimated_ridersip as int64) as bus_ridership,
+        cast(buses_of_comparable_pre_pandemic_day as float64) as bus_pct_pre_pandemic,
+        cast(lirr_total_estimated_ridership as int64) as lirr_ridership,
+        cast(lirr_of_comparable_pre_pandemic_day as float64) as lirr_pct_pre_pandemic,
+        cast(metro_north_total_estimated_ridership as int64) as metro_north_ridership,
+        cast(metro_north_of_comparable_pre_pandemic_day as float64) as metro_north_pct_pre_pandemic,
+        cast(access_a_ride_total_scheduled_trips as int64) as access_a_ride_ridership,
+        cast(bridges_and_tunnels_total_traffic as int64) as bridges_tunnels_traffic,
+        cast(staten_island_railway_total_estimated_ridership as int64) as sir_ridership
+    from source
+    where date is not null
+)
+
+select * from renamed;
+
+
+[0m15:01:45.121628 [debug] [Thread-2 (]: On model.dbt_mta.stg_bridges_tunnels: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_bridges_tunnels"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_bridges_tunnels`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_bridges_tunnels`
+),
+
+renamed as (
+    select
+        plaza,
+        cast(collection_date as date) as collection_date,
+        cast(day_of_week as int64) as day_of_week,
+        cast(holiday as int64) as is_holiday,
+        cast(total as int64) as total_traffic,
+        cast(class_1 as int64) as passenger_vehicles,
+        cast(class_2 as int64) as class_2_vehicles,
+        cast(class_3 as int64) as class_3_vehicles
+    from source
+    where collection_date is not null
+)
+
+select * from renamed;
+
+
+[0m15:01:45.122458 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:01:45.123447 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:01:45.167767 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:01:45.846028 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:e75a01fb-bdec-4321-baa2-802df6f54bcd&page=queryresults
+[0m15:01:45.995143 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:2da12d95-1cc1-4158-be31-51747aa6d845&page=queryresults
+[0m15:01:46.003152 [debug] [Thread-1 (]: SQL status: OK in 0.155 seconds
+[0m15:01:46.017833 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:c34b71a8-14e8-4c7a-af45-e2bd0605ba9a&page=queryresults
+[0m15:01:46.077758 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:1c62c83e-3fbb-4c1f-8145-6c50130bed09&page=queryresults
+[0m15:01:46.295490 [debug] [Thread-3 (]: SQL status: OK in 0.276 seconds
+[0m15:01:46.334404 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31d382920>]}
+[0m15:01:46.336258 [info ] [Thread-3 (]: 3 of 13 OK created sql view model mta_warehouse.stg_bus_hourly ................. [[32mCREATE VIEW (0 processed)[0m in 1.36s]
+[0m15:01:46.339704 [debug] [Thread-3 (]: Finished running node model.dbt_mta.stg_bus_hourly
+[0m15:01:46.341764 [debug] [Thread-3 (]: Began running node model.dbt_mta.stg_stations
+[0m15:01:46.342812 [info ] [Thread-3 (]: 5 of 13 START sql view model mta_warehouse.stg_stations ........................ [RUN]
+[0m15:01:46.343599 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_bus_hourly, now model.dbt_mta.stg_stations)
+[0m15:01:46.344375 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.stg_stations
+[0m15:01:46.350173 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.stg_stations"
+[0m15:01:46.351912 [debug] [Thread-4 (]: SQL status: OK in 0.355 seconds
+[0m15:01:46.352571 [debug] [Thread-3 (]: Began executing node model.dbt_mta.stg_stations
+[0m15:01:46.358267 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31c23dc00>]}
+[0m15:01:46.364167 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.stg_stations"
+[0m15:01:46.365292 [info ] [Thread-4 (]: 4 of 13 OK created sql view model mta_warehouse.stg_daily_ridership ............ [[32mCREATE VIEW (0 processed)[0m in 1.36s]
+[0m15:01:46.366464 [debug] [Thread-4 (]: Finished running node model.dbt_mta.stg_daily_ridership
+[0m15:01:46.367109 [debug] [Thread-4 (]: Began running node model.dbt_mta.stg_subway_hourly
+[0m15:01:46.367960 [info ] [Thread-4 (]: 6 of 13 START sql view model mta_warehouse.stg_subway_hourly ................... [RUN]
+[0m15:01:46.368799 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_daily_ridership, now model.dbt_mta.stg_subway_hourly)
+[0m15:01:46.369405 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.stg_subway_hourly
+[0m15:01:46.373853 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.stg_subway_hourly"
+[0m15:01:46.374636 [debug] [Thread-3 (]: On model.dbt_mta.stg_stations: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_stations"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_stations`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_stations`
+),
+
+renamed as (
+    select
+        complex_id as station_complex_id,
+        display_name as station_complex_name,
+        borough,
+        daytime_routes,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude,
+        case when ada = '1' then true else false end as is_ada_accessible
+    from source
+)
+
+select * from renamed;
+
+
+[0m15:01:46.375536 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:01:46.420704 [debug] [Thread-4 (]: Began executing node model.dbt_mta.stg_subway_hourly
+[0m15:01:46.433956 [debug] [Thread-2 (]: SQL status: OK in 0.355 seconds
+[0m15:01:46.432969 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.stg_subway_hourly"
+[0m15:01:46.444917 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b3433b6bc0>]}
+[0m15:01:46.463057 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mta.dim_calendar"
+[0m15:01:46.464404 [info ] [Thread-2 (]: 2 of 13 OK created sql view model mta_warehouse.stg_bridges_tunnels ............ [[32mCREATE VIEW (0 processed)[0m in 1.50s]
+[0m15:01:46.465550 [debug] [Thread-4 (]: On model.dbt_mta.stg_subway_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_subway_hourly"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_subway_hourly`
+),
+
+renamed as (
+    select
+        cast(transit_timestamp as timestamp) as transit_ts,
+        cast(transit_timestamp as date) as transit_date,
+        extract(hour from cast(transit_timestamp as timestamp)) as transit_hour,
+        extract(dayofweek from cast(transit_timestamp as timestamp)) as day_of_week,
+        station_complex_id,
+        station_complex as station_complex_name,
+        borough,
+        fare_class_category,
+        payment_method,
+        cast(ridership as int64) as ridership,
+        cast(transfers as int64) as transfers,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude
+    from source
+    where transit_timestamp is not null
+)
+
+select * from renamed;
+
+
+[0m15:01:46.466592 [debug] [Thread-2 (]: Finished running node model.dbt_mta.stg_bridges_tunnels
+[0m15:01:46.467482 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:01:46.468432 [debug] [Thread-2 (]: Began running node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:01:46.469174 [debug] [Thread-1 (]: Began executing node model.dbt_mta.dim_calendar
+[0m15:01:46.470527 [info ] [Thread-2 (]: 7 of 13 START sql view model mta_warehouse.int_ridership_daily_by_mode ......... [RUN]
+[0m15:01:46.531981 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_bridges_tunnels, now model.dbt_mta.int_ridership_daily_by_mode)
+[0m15:01:46.533105 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:01:46.540598 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.int_ridership_daily_by_mode"
+[0m15:01:46.541514 [debug] [Thread-2 (]: Began executing node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:01:46.547112 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.int_ridership_daily_by_mode"
+[0m15:01:46.548212 [debug] [Thread-2 (]: On model.dbt_mta.int_ridership_daily_by_mode: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_ridership_daily_by_mode"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode`
+  OPTIONS()
+  as select ride_date, 'Subway' as transport_mode, subway_ridership as ridership, subway_pct_pre_pandemic as pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Bus', bus_ridership, bus_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'LIRR', lirr_ridership, lirr_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Metro-North', metro_north_ridership, metro_north_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'SIR', sir_ridership, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Access-A-Ride', access_a_ride_ridership, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Bridges & Tunnels', bridges_tunnels_traffic, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`;
+
+
+[0m15:01:46.549043 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:01:46.752366 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mta.dim_calendar"
+[0m15:01:46.756895 [debug] [Thread-1 (]: On model.dbt_mta.dim_calendar: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_calendar"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`dim_calendar`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with date_spine as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+     + 
+    
+    p11.generated_number * power(2, 11)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+     cross join 
+    
+    p as p11
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 2278
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+        datetime_add(
+            cast( cast('2020-01-01' as date) as datetime),
+        interval row_number() over (order by generated_number) - 1 day
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast(current_date() as date)
+
+)
+
+select * from filtered
+
+
+),
+
+enriched as (
+    select
+        cast(date_day as date) as date_day,
+        extract(year from date_day) as year,
+        extract(quarter from date_day) as quarter,
+        extract(month from date_day) as month,
+        format_date('%B', date_day) as month_name,
+        format_date('%A', date_day) as day_name,
+        extract(dayofweek from date_day) in (1, 7) as is_weekend
+    from date_spine
+)
+
+select * from enriched
+    );
+  
+[0m15:01:47.027595 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:df351673-2a37-4112-879a-9ae3c8a688f6&page=queryresults
+[0m15:01:47.180262 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:ddacbd89-734e-4ec8-8f27-fd67eac493f8&page=queryresults
+[0m15:01:47.202211 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:f25b1d18-9179-4e7c-868b-c9f95f663c02&page=queryresults
+[0m15:01:47.463085 [debug] [Thread-3 (]: SQL status: OK in 0.281 seconds
+[0m15:01:47.476437 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b343e37ac0>]}
+[0m15:01:47.478185 [info ] [Thread-3 (]: 5 of 13 OK created sql view model mta_warehouse.stg_stations ................... [[32mCREATE VIEW (0 processed)[0m in 1.13s]
+[0m15:01:47.479957 [debug] [Thread-3 (]: Finished running node model.dbt_mta.stg_stations
+[0m15:01:47.482141 [debug] [Thread-3 (]: Began running node model.dbt_mta.dim_stations
+[0m15:01:47.483117 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:198d2d1a-d8bb-46c3-b9ad-b05869052778&page=queryresults
+[0m15:01:47.484118 [info ] [Thread-3 (]: 8 of 13 START sql table model mta_warehouse.dim_stations ....................... [RUN]
+[0m15:01:47.487417 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_stations, now model.dbt_mta.dim_stations)
+[0m15:01:47.488206 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.dim_stations
+[0m15:01:47.489206 [debug] [Thread-4 (]: SQL status: OK in 0.286 seconds
+[0m15:01:47.496557 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.dim_stations"
+[0m15:01:47.503494 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31d380eb0>]}
+[0m15:01:47.504853 [info ] [Thread-4 (]: 6 of 13 OK created sql view model mta_warehouse.stg_subway_hourly .............. [[32mCREATE VIEW (0 processed)[0m in 1.13s]
+[0m15:01:47.506039 [debug] [Thread-4 (]: Finished running node model.dbt_mta.stg_subway_hourly
+[0m15:01:47.507149 [debug] [Thread-4 (]: Began running node model.dbt_mta.int_station_daily_totals
+[0m15:01:47.507978 [info ] [Thread-4 (]: 9 of 13 START sql view model mta_warehouse.int_station_daily_totals ............ [RUN]
+[0m15:01:47.508771 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_subway_hourly, now model.dbt_mta.int_station_daily_totals)
+[0m15:01:47.509415 [debug] [Thread-3 (]: Began executing node model.dbt_mta.dim_stations
+[0m15:01:47.510273 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.int_station_daily_totals
+[0m15:01:47.515946 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.dim_stations"
+[0m15:01:47.521467 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.int_station_daily_totals"
+[0m15:01:47.522656 [debug] [Thread-3 (]: On model.dbt_mta.dim_stations: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_stations"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`dim_stations`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    station_complex_id,
+    station_complex_name,
+    borough,
+    daytime_routes,
+    latitude,
+    longitude,
+    is_ada_accessible
+from `mta-data-491403`.`mta_warehouse`.`stg_stations`
+    );
+  
+[0m15:01:47.523266 [debug] [Thread-4 (]: Began executing node model.dbt_mta.int_station_daily_totals
+[0m15:01:47.523997 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:01:47.529515 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.int_station_daily_totals"
+[0m15:01:47.577032 [debug] [Thread-4 (]: On model.dbt_mta.int_station_daily_totals: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_station_daily_totals"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_station_daily_totals`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    sum(ridership) as daily_ridership,
+    sum(transfers) as daily_transfers
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3;
+
+
+[0m15:01:47.578093 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:01:47.799349 [debug] [Thread-2 (]: SQL status: OK in 0.314 seconds
+[0m15:01:47.807423 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b342b5d090>]}
+[0m15:01:47.810918 [info ] [Thread-2 (]: 7 of 13 OK created sql view model mta_warehouse.int_ridership_daily_by_mode .... [[32mCREATE VIEW (0 processed)[0m in 1.27s]
+[0m15:01:47.816311 [debug] [Thread-2 (]: Finished running node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:01:47.817256 [debug] [Thread-2 (]: Began running node model.dbt_mta.int_subway_peak_hours
+[0m15:01:47.818640 [info ] [Thread-2 (]: 10 of 13 START sql view model mta_warehouse.int_subway_peak_hours .............. [RUN]
+[0m15:01:47.820080 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_ridership_daily_by_mode, now model.dbt_mta.int_subway_peak_hours)
+[0m15:01:47.821259 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.int_subway_peak_hours
+[0m15:01:47.831645 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:01:47.833431 [debug] [Thread-2 (]: Began executing node model.dbt_mta.int_subway_peak_hours
+[0m15:01:47.843194 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:01:47.844804 [debug] [Thread-2 (]: On model.dbt_mta.int_subway_peak_hours: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_subway_peak_hours"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_subway_peak_hours`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    transit_hour,
+    sum(ridership) as total_ridership,
+    case
+        when transit_hour between 7 and 9 then 'AM Peak'
+        when transit_hour between 17 and 19 then 'PM Peak'
+        when transit_hour between 10 and 16 then 'Midday'
+        when transit_hour between 20 and 23 then 'Evening'
+        else 'Overnight'
+    end as time_period
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3, 4;
+
+
+[0m15:01:47.845953 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:01:48.464358 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:2fe586eb-d83a-49c7-a4bd-78079d0ee305&page=queryresults
+[0m15:01:48.538917 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:63f94da8-be39-42ea-9320-a491b3e4f292&page=queryresults
+[0m15:01:48.724886 [debug] [Thread-4 (]: SQL status: OK in 0.258 seconds
+[0m15:01:48.731474 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b314263a60>]}
+[0m15:01:48.732691 [info ] [Thread-4 (]: 9 of 13 OK created sql view model mta_warehouse.int_station_daily_totals ....... [[32mCREATE VIEW (0 processed)[0m in 1.22s]
+[0m15:01:48.733795 [debug] [Thread-4 (]: Finished running node model.dbt_mta.int_station_daily_totals
+[0m15:01:48.734549 [debug] [Thread-4 (]: Began running node model.dbt_mta.fct_monthly_trends
+[0m15:01:48.735523 [info ] [Thread-4 (]: 11 of 13 START sql table model mta_warehouse.fct_monthly_trends ................ [RUN]
+[0m15:01:48.736353 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_station_daily_totals, now model.dbt_mta.fct_monthly_trends)
+[0m15:01:48.737060 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.fct_monthly_trends
+[0m15:01:48.744485 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.fct_monthly_trends"
+[0m15:01:48.745568 [debug] [Thread-4 (]: Began executing node model.dbt_mta.fct_monthly_trends
+[0m15:01:48.750955 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.fct_monthly_trends"
+[0m15:01:48.752632 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:ff4ba942-7d6b-43d1-8f96-bf3b77702dd8&page=queryresults
+[0m15:01:48.753456 [debug] [Thread-4 (]: On model.dbt_mta.fct_monthly_trends: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_monthly_trends"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_monthly_trends`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    date_trunc(ride_date, month) as month_start,
+    transport_mode,
+    sum(ridership) as monthly_ridership,
+    avg(pct_pre_pandemic) as avg_pct_pre_pandemic,
+    count(*) as days_in_month
+from `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode`
+group by 1, 2
+    );
+  
+[0m15:01:48.754547 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:01:49.012944 [debug] [Thread-2 (]: SQL status: OK in 0.258 seconds
+[0m15:01:49.029679 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31d380d60>]}
+[0m15:01:49.032290 [info ] [Thread-2 (]: 10 of 13 OK created sql view model mta_warehouse.int_subway_peak_hours ......... [[32mCREATE VIEW (0 processed)[0m in 1.21s]
+[0m15:01:49.036288 [debug] [Thread-2 (]: Finished running node model.dbt_mta.int_subway_peak_hours
+[0m15:01:49.390311 [debug] [Thread-1 (]: SQL status: OK in 2.362 seconds
+[0m15:01:49.565351 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31425f070>]}
+[0m15:01:49.567071 [info ] [Thread-1 (]: 1 of 13 OK created sql table model mta_warehouse.dim_calendar .................. [[32mCREATE TABLE (2.3k rows, 0 processed)[0m in 4.62s]
+[0m15:01:49.575099 [debug] [Thread-1 (]: Finished running node model.dbt_mta.dim_calendar
+[0m15:01:49.576522 [debug] [Thread-2 (]: Began running node model.dbt_mta.fct_daily_ridership
+[0m15:01:49.577565 [info ] [Thread-2 (]: 12 of 13 START sql table model mta_warehouse.fct_daily_ridership ............... [RUN]
+[0m15:01:49.578413 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_subway_peak_hours, now model.dbt_mta.fct_daily_ridership)
+[0m15:01:49.579358 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.fct_daily_ridership
+[0m15:01:49.588957 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.fct_daily_ridership"
+[0m15:01:49.589972 [debug] [Thread-2 (]: Began executing node model.dbt_mta.fct_daily_ridership
+[0m15:01:49.595965 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.fct_daily_ridership"
+[0m15:01:49.597098 [debug] [Thread-2 (]: On model.dbt_mta.fct_daily_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_daily_ridership"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_daily_ridership`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    r.ride_date,
+    r.transport_mode,
+    r.ridership,
+    r.pct_pre_pandemic,
+    c.day_name,
+    c.is_weekend,
+    c.month_name,
+    c.quarter,
+    c.year
+from `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode` r
+left join `mta-data-491403`.`mta_warehouse`.`dim_calendar` c
+    on r.ride_date = c.date_day
+    );
+  
+[0m15:01:49.597891 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:01:49.735068 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:48bd48b7-4b4c-4589-b4b4-1813d20983b1&page=queryresults
+[0m15:01:50.031920 [debug] [Thread-3 (]: SQL status: OK in 1.492 seconds
+[0m15:01:50.226334 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31d381c00>]}
+[0m15:01:50.228321 [info ] [Thread-3 (]: 8 of 13 OK created sql table model mta_warehouse.dim_stations .................. [[32mCREATE TABLE (445.0 rows, 25.2 KiB processed)[0m in 2.74s]
+[0m15:01:50.230473 [debug] [Thread-3 (]: Finished running node model.dbt_mta.dim_stations
+[0m15:01:50.233021 [debug] [Thread-1 (]: Began running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:01:50.235568 [info ] [Thread-1 (]: 13 of 13 START sql table model mta_warehouse.fct_hourly_station_ridership ...... [RUN]
+[0m15:01:50.237137 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mta.dim_calendar, now model.dbt_mta.fct_hourly_station_ridership)
+[0m15:01:50.238801 [debug] [Thread-1 (]: Began compiling node model.dbt_mta.fct_hourly_station_ridership
+[0m15:01:50.250710 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mta.fct_hourly_station_ridership"
+[0m15:01:50.251960 [debug] [Thread-1 (]: Began executing node model.dbt_mta.fct_hourly_station_ridership
+[0m15:01:50.259158 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mta.fct_hourly_station_ridership"
+[0m15:01:50.260394 [debug] [Thread-1 (]: On model.dbt_mta.fct_hourly_station_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_hourly_station_ridership"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_hourly_station_ridership`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    p.transit_date,
+    p.station_complex_id,
+    p.station_complex_name,
+    p.transit_hour,
+    p.time_period,
+    p.total_ridership,
+    s.borough,
+    s.latitude,
+    s.longitude
+from `mta-data-491403`.`mta_warehouse`.`int_subway_peak_hours` p
+left join `mta-data-491403`.`mta_warehouse`.`dim_stations` s
+    on p.station_complex_id = s.station_complex_id
+    );
+  
+[0m15:01:50.261375 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:01:50.530352 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:1e2dbf36-15fc-4dfe-9875-1dbfa380462c&page=queryresults
+[0m15:01:51.239805 [debug] [Thread-4 (]: SQL status: OK in 1.503 seconds
+[0m15:01:51.267543 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:dedeb341-bf5f-4fe3-9330-0719dda277fb&page=queryresults
+[0m15:01:51.450291 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b314321000>]}
+[0m15:01:51.451716 [info ] [Thread-4 (]: 11 of 13 OK created sql table model mta_warehouse.fct_monthly_trends ........... [[32mCREATE TABLE (413.0 rows, 177.5 KiB processed)[0m in 2.71s]
+[0m15:01:51.452903 [debug] [Thread-4 (]: Finished running node model.dbt_mta.fct_monthly_trends
+[0m15:01:51.537051 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:dedeb341-bf5f-4fe3-9330-0719dda277fb&page=queryresults
+[0m15:01:51.544771 [debug] [Thread-1 (]: Database Error in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)
+  Bad int64 value: 15.0
+  compiled code at target/run/dbt_mta/models/marts/fct_hourly_station_ridership.sql
+[0m15:01:51.545948 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b3141926e0>]}
+[0m15:01:51.547644 [error] [Thread-1 (]: 13 of 13 ERROR creating sql table model mta_warehouse.fct_hourly_station_ridership  [[31mERROR[0m in 1.31s]
+[0m15:01:51.549115 [debug] [Thread-1 (]: Finished running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:01:51.550668 [debug] [Thread-7 (]: Marking all children of 'model.dbt_mta.fct_hourly_station_ridership' to be skipped because of status 'error'.  Reason: Database Error in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)
+  Bad int64 value: 15.0
+  compiled code at target/run/dbt_mta/models/marts/fct_hourly_station_ridership.sql.
+[0m15:01:52.244873 [debug] [Thread-2 (]: SQL status: OK in 1.710 seconds
+[0m15:01:52.457649 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7eba2801-aa38-4278-941a-0c9788807f3d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31c3d4280>]}
+[0m15:01:52.462819 [info ] [Thread-2 (]: 12 of 13 OK created sql table model mta_warehouse.fct_daily_ridership .......... [[32mCREATE TABLE (12.4k rows, 271.6 KiB processed)[0m in 2.88s]
+[0m15:01:52.466705 [debug] [Thread-2 (]: Finished running node model.dbt_mta.fct_daily_ridership
+[0m15:01:52.470515 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:01:52.533405 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:01:52.534346 [debug] [MainThread]: Connection 'model.dbt_mta.fct_hourly_station_ridership' was properly closed.
+[0m15:01:52.535116 [debug] [MainThread]: Connection 'model.dbt_mta.fct_daily_ridership' was properly closed.
+[0m15:01:52.535786 [debug] [MainThread]: Connection 'model.dbt_mta.dim_stations' was properly closed.
+[0m15:01:52.536378 [debug] [MainThread]: Connection 'model.dbt_mta.fct_monthly_trends' was properly closed.
+[0m15:01:52.537098 [info ] [MainThread]: 
+[0m15:01:52.537827 [info ] [MainThread]: Finished running 5 table models, 8 view models in 0 hours 0 minutes and 8.81 seconds (8.81s).
+[0m15:01:52.544898 [debug] [MainThread]: Command end result
+[0m15:01:52.593212 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:01:52.595622 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:01:52.605305 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kida/Documents/mta_data/dbt_mta/target/run_results.json
+[0m15:01:52.605840 [info ] [MainThread]: 
+[0m15:01:52.606359 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:01:52.606807 [info ] [MainThread]: 
+[0m15:01:52.607333 [error] [MainThread]: [31mFailure in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)[0m
+[0m15:01:52.607847 [error] [MainThread]:   Database Error in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)
+  Bad int64 value: 15.0
+  compiled code at target/run/dbt_mta/models/marts/fct_hourly_station_ridership.sql
+[0m15:01:52.608319 [info ] [MainThread]: 
+[0m15:01:52.608938 [info ] [MainThread]:   compiled code at target/compiled/dbt_mta/models/marts/fct_hourly_station_ridership.sql
+[0m15:01:52.609444 [info ] [MainThread]: 
+[0m15:01:52.609934 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=13
+[0m15:01:52.610664 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 11.22365, "process_in_blocks": "0", "process_kernel_time": 0.305068, "process_mem_max_rss": "243156", "process_out_blocks": "4704", "process_user_time": 8.968028}
+[0m15:01:52.611272 [debug] [MainThread]: Command `dbt run` failed at 15:01:52.611148 after 11.22 seconds
+[0m15:01:52.611789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b343ddb460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b31c3ede10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74b343aedbd0>]}
+[0m15:01:52.612353 [debug] [MainThread]: Flushing usage events
+[0m15:01:53.027824 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:02:38.408931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7061331fb460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706131dbf1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706131dbf190>]}
+
+
+============================== 15:02:38.411855 | 8be782ec-4755-4bfc-a2e8-7caa1bbc997e ==============================
+[0m15:02:38.411855 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:02:38.412479 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'version_check': 'True', 'log_path': '/home/kida/Documents/mta_data/dbt_mta/logs', 'printer_width': '80', 'no_print': 'None', 'profiles_dir': '/home/kida/Documents/mta_data/dbt_mta', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --select fct_hourly_station_ridership+ stg_subway_hourly+', 'target_path': 'None', 'fail_fast': 'False', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'warn_error': 'None', 'write_json': 'True', 'use_colors': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False'}
+[0m15:02:39.575716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706131f1fe50>]}
+[0m15:02:39.675044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706131dbdd20>]}
+[0m15:02:39.675887 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m15:02:39.849415 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:02:40.013195 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:02:40.014427 [debug] [MainThread]: Partial parsing: updated file: dbt_mta://models/staging/stg_subway_hourly.sql
+[0m15:02:40.436936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7061035dc580>]}
+[0m15:02:40.558200 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:02:40.560251 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:02:40.681819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7061108a2f50>]}
+[0m15:02:40.682742 [info ] [MainThread]: Found 13 models, 5 sources, 654 macros
+[0m15:02:40.683409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706134de51e0>]}
+[0m15:02:40.686381 [info ] [MainThread]: 
+[0m15:02:40.687530 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:02:40.688287 [info ] [MainThread]: 
+[0m15:02:40.689234 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:02:40.697457 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_mta-data-491403'
+[0m15:02:40.698201 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:02:41.291190 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_mta-data-491403, now list_mta-data-491403_mta_warehouse)
+[0m15:02:41.292749 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:02:41.898683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706134d77fd0>]}
+[0m15:02:41.901104 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:02:41.957955 [debug] [Thread-1 (]: Began running node model.dbt_mta.stg_subway_hourly
+[0m15:02:41.958765 [info ] [Thread-1 (]: 1 of 4 START sql view model mta_warehouse.stg_subway_hourly .................... [RUN]
+[0m15:02:41.959434 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mta-data-491403_mta_warehouse, now model.dbt_mta.stg_subway_hourly)
+[0m15:02:41.959955 [debug] [Thread-1 (]: Began compiling node model.dbt_mta.stg_subway_hourly
+[0m15:02:41.971424 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mta.stg_subway_hourly"
+[0m15:02:41.972319 [debug] [Thread-1 (]: Began executing node model.dbt_mta.stg_subway_hourly
+[0m15:02:42.008891 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mta.stg_subway_hourly"
+[0m15:02:42.009819 [debug] [Thread-1 (]: On model.dbt_mta.stg_subway_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_subway_hourly"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_subway_hourly`
+),
+
+renamed as (
+    select
+        cast(transit_timestamp as timestamp) as transit_ts,
+        cast(transit_timestamp as date) as transit_date,
+        extract(hour from cast(transit_timestamp as timestamp)) as transit_hour,
+        extract(dayofweek from cast(transit_timestamp as timestamp)) as day_of_week,
+        station_complex_id,
+        station_complex as station_complex_name,
+        borough,
+        fare_class_category,
+        payment_method,
+        cast(cast(ridership as float64) as int64) as ridership,
+        cast(cast(transfers as float64) as int64) as transfers,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude
+    from source
+    where transit_timestamp is not null
+)
+
+select * from renamed;
+
+
+[0m15:02:42.010461 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:02:42.652124 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:c7fc1cdd-7dd9-46de-8ed1-ca59026a5fa0&page=queryresults
+[0m15:02:42.939361 [debug] [Thread-1 (]: SQL status: OK in 0.284 seconds
+[0m15:02:43.019773 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706133257ac0>]}
+[0m15:02:43.020757 [info ] [Thread-1 (]: 1 of 4 OK created sql view model mta_warehouse.stg_subway_hourly ............... [[32mCREATE VIEW (0 processed)[0m in 1.06s]
+[0m15:02:43.021651 [debug] [Thread-1 (]: Finished running node model.dbt_mta.stg_subway_hourly
+[0m15:02:43.022717 [debug] [Thread-3 (]: Began running node model.dbt_mta.int_station_daily_totals
+[0m15:02:43.023646 [debug] [Thread-4 (]: Began running node model.dbt_mta.int_subway_peak_hours
+[0m15:02:43.024639 [info ] [Thread-3 (]: 2 of 4 START sql view model mta_warehouse.int_station_daily_totals ............. [RUN]
+[0m15:02:43.025518 [info ] [Thread-4 (]: 3 of 4 START sql view model mta_warehouse.int_subway_peak_hours ................ [RUN]
+[0m15:02:43.026319 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_mta.int_station_daily_totals'
+[0m15:02:43.027068 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_mta.int_subway_peak_hours'
+[0m15:02:43.027627 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.int_station_daily_totals
+[0m15:02:43.028213 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.int_subway_peak_hours
+[0m15:02:43.032576 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.int_station_daily_totals"
+[0m15:02:43.041464 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:02:43.042996 [debug] [Thread-4 (]: Began executing node model.dbt_mta.int_subway_peak_hours
+[0m15:02:43.043702 [debug] [Thread-3 (]: Began executing node model.dbt_mta.int_station_daily_totals
+[0m15:02:43.050127 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:02:43.055885 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.int_station_daily_totals"
+[0m15:02:43.057306 [debug] [Thread-3 (]: On model.dbt_mta.int_station_daily_totals: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_station_daily_totals"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_station_daily_totals`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    sum(ridership) as daily_ridership,
+    sum(transfers) as daily_transfers
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3;
+
+
+[0m15:02:43.058202 [debug] [Thread-4 (]: On model.dbt_mta.int_subway_peak_hours: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_subway_peak_hours"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_subway_peak_hours`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    transit_hour,
+    sum(ridership) as total_ridership,
+    case
+        when transit_hour between 7 and 9 then 'AM Peak'
+        when transit_hour between 17 and 19 then 'PM Peak'
+        when transit_hour between 10 and 16 then 'Midday'
+        when transit_hour between 20 and 23 then 'Evening'
+        else 'Overnight'
+    end as time_period
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3, 4;
+
+
+[0m15:02:43.059257 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:02:43.060196 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:02:44.041414 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:90efb747-0fc7-49a4-90b4-c195f72073d7&page=queryresults
+[0m15:02:44.141755 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:59457b3e-bb66-4ac6-b309-38efe99d00ff&page=queryresults
+[0m15:02:44.346194 [debug] [Thread-3 (]: SQL status: OK in 0.302 seconds
+[0m15:02:44.361545 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706110878910>]}
+[0m15:02:44.363339 [info ] [Thread-3 (]: 2 of 4 OK created sql view model mta_warehouse.int_station_daily_totals ........ [[32mCREATE VIEW (0 processed)[0m in 1.33s]
+[0m15:02:44.364671 [debug] [Thread-3 (]: Finished running node model.dbt_mta.int_station_daily_totals
+[0m15:02:44.490285 [debug] [Thread-4 (]: SQL status: OK in 0.347 seconds
+[0m15:02:44.513455 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70610347b160>]}
+[0m15:02:44.516047 [info ] [Thread-4 (]: 3 of 4 OK created sql view model mta_warehouse.int_subway_peak_hours ........... [[32mCREATE VIEW (0 processed)[0m in 1.48s]
+[0m15:02:44.518401 [debug] [Thread-4 (]: Finished running node model.dbt_mta.int_subway_peak_hours
+[0m15:02:44.520700 [debug] [Thread-1 (]: Began running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:02:44.522307 [info ] [Thread-1 (]: 4 of 4 START sql table model mta_warehouse.fct_hourly_station_ridership ........ [RUN]
+[0m15:02:44.524024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_subway_hourly, now model.dbt_mta.fct_hourly_station_ridership)
+[0m15:02:44.525540 [debug] [Thread-1 (]: Began compiling node model.dbt_mta.fct_hourly_station_ridership
+[0m15:02:44.532655 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mta.fct_hourly_station_ridership"
+[0m15:02:44.534064 [debug] [Thread-1 (]: Began executing node model.dbt_mta.fct_hourly_station_ridership
+[0m15:02:44.586294 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mta.fct_hourly_station_ridership"
+[0m15:02:44.588044 [debug] [Thread-1 (]: On model.dbt_mta.fct_hourly_station_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_hourly_station_ridership"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_hourly_station_ridership`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    p.transit_date,
+    p.station_complex_id,
+    p.station_complex_name,
+    p.transit_hour,
+    p.time_period,
+    p.total_ridership,
+    s.borough,
+    s.latitude,
+    s.longitude
+from `mta-data-491403`.`mta_warehouse`.`int_subway_peak_hours` p
+left join `mta-data-491403`.`mta_warehouse`.`dim_stations` s
+    on p.station_complex_id = s.station_complex_id
+    );
+  
+[0m15:02:44.589332 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:02:45.593814 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:54954741-408a-4936-a642-930e9adca294&page=queryresults
+[0m15:02:45.836400 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:54954741-408a-4936-a642-930e9adca294&page=queryresults
+[0m15:02:45.850162 [debug] [Thread-1 (]: Database Error in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)
+  Invalid date: '2024-12-16T18:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_hourly_station_ridership.sql
+[0m15:02:45.852187 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8be782ec-4755-4bfc-a2e8-7caa1bbc997e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7060d37795d0>]}
+[0m15:02:45.854201 [error] [Thread-1 (]: 4 of 4 ERROR creating sql table model mta_warehouse.fct_hourly_station_ridership  [[31mERROR[0m in 1.33s]
+[0m15:02:45.856130 [debug] [Thread-1 (]: Finished running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:02:45.857371 [debug] [Thread-7 (]: Marking all children of 'model.dbt_mta.fct_hourly_station_ridership' to be skipped because of status 'error'.  Reason: Database Error in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)
+  Invalid date: '2024-12-16T18:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_hourly_station_ridership.sql.
+[0m15:02:45.860027 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:02:45.910169 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:02:45.912254 [debug] [MainThread]: Connection 'model.dbt_mta.fct_hourly_station_ridership' was properly closed.
+[0m15:02:45.912778 [debug] [MainThread]: Connection 'model.dbt_mta.int_station_daily_totals' was properly closed.
+[0m15:02:45.913225 [debug] [MainThread]: Connection 'model.dbt_mta.int_subway_peak_hours' was properly closed.
+[0m15:02:45.913792 [info ] [MainThread]: 
+[0m15:02:45.914296 [info ] [MainThread]: Finished running 1 table model, 3 view models in 0 hours 0 minutes and 5.22 seconds (5.22s).
+[0m15:02:45.915859 [debug] [MainThread]: Command end result
+[0m15:02:45.963679 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:02:45.965795 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:02:45.981090 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kida/Documents/mta_data/dbt_mta/target/run_results.json
+[0m15:02:45.981683 [info ] [MainThread]: 
+[0m15:02:45.982258 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:02:45.982781 [info ] [MainThread]: 
+[0m15:02:45.983396 [error] [MainThread]: [31mFailure in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)[0m
+[0m15:02:45.984007 [error] [MainThread]:   Database Error in model fct_hourly_station_ridership (models/marts/fct_hourly_station_ridership.sql)
+  Invalid date: '2024-12-16T18:00:00.000'
+  compiled code at target/run/dbt_mta/models/marts/fct_hourly_station_ridership.sql
+[0m15:02:45.984505 [info ] [MainThread]: 
+[0m15:02:45.985179 [info ] [MainThread]:   compiled code at target/compiled/dbt_mta/models/marts/fct_hourly_station_ridership.sql
+[0m15:02:45.985745 [info ] [MainThread]: 
+[0m15:02:45.986369 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=4
+[0m15:02:45.987251 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.6531496, "process_in_blocks": "0", "process_kernel_time": 0.31142, "process_mem_max_rss": "236904", "process_out_blocks": "4408", "process_user_time": 6.840275}
+[0m15:02:45.988111 [debug] [MainThread]: Command `dbt run` failed at 15:02:45.987926 after 7.65 seconds
+[0m15:02:45.988765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7061331fb460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7061035f2590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x706132f0ebf0>]}
+[0m15:02:45.989379 [debug] [MainThread]: Flushing usage events
+[0m15:02:46.448875 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:04:12.150112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e4ffb400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e3e5f130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e3e5f0d0>]}
+
+
+============================== 15:04:12.154215 | 9ad01de1-b0e8-41fc-8aa1-e35a065dfe21 ==============================
+[0m15:04:12.154215 [info ] [MainThread]: Running with dbt=1.11.7
+[0m15:04:12.155086 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'target_path': 'None', 'debug': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'log_path': '/home/kida/Documents/mta_data/dbt_mta/logs', 'warn_error': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'write_json': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run', 'printer_width': '80', 'profiles_dir': '/home/kida/Documents/mta_data/dbt_mta', 'indirect_selection': 'eager', 'no_print': 'None', 'use_colors': 'True'}
+[0m15:04:13.339408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e3e5f1c0>]}
+[0m15:04:13.434307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e3e5dd80>]}
+[0m15:04:13.435113 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m15:04:13.620930 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m15:04:13.787295 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m15:04:13.788090 [debug] [MainThread]: Partial parsing: updated file: dbt_mta://models/staging/stg_bridges_tunnels.sql
+[0m15:04:13.788622 [debug] [MainThread]: Partial parsing: updated file: dbt_mta://models/staging/stg_subway_hourly.sql
+[0m15:04:13.789161 [debug] [MainThread]: Partial parsing: updated file: dbt_mta://models/staging/stg_bus_hourly.sql
+[0m15:04:14.204867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6bd4dbee0>]}
+[0m15:04:14.357849 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:04:14.360412 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:04:14.475821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6be63dc90>]}
+[0m15:04:14.478120 [info ] [MainThread]: Found 13 models, 5 sources, 654 macros
+[0m15:04:14.480456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e685b7c0>]}
+[0m15:04:14.484254 [info ] [MainThread]: 
+[0m15:04:14.485053 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:04:14.485641 [info ] [MainThread]: 
+[0m15:04:14.486518 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:04:14.497026 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_mta-data-491403'
+[0m15:04:14.497904 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:04:15.050302 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_mta-data-491403, now list_mta-data-491403_mta_warehouse)
+[0m15:04:15.051166 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:04:15.670167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6be957940>]}
+[0m15:04:15.671152 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:04:15.730377 [debug] [Thread-1 (]: Began running node model.dbt_mta.dim_calendar
+[0m15:04:15.731017 [debug] [Thread-2 (]: Began running node model.dbt_mta.stg_bridges_tunnels
+[0m15:04:15.731715 [debug] [Thread-3 (]: Began running node model.dbt_mta.stg_bus_hourly
+[0m15:04:15.732772 [info ] [Thread-1 (]: 1 of 13 START sql table model mta_warehouse.dim_calendar ....................... [RUN]
+[0m15:04:15.733510 [debug] [Thread-4 (]: Began running node model.dbt_mta.stg_daily_ridership
+[0m15:04:15.734287 [info ] [Thread-2 (]: 2 of 13 START sql view model mta_warehouse.stg_bridges_tunnels ................. [RUN]
+[0m15:04:15.735162 [info ] [Thread-3 (]: 3 of 13 START sql view model mta_warehouse.stg_bus_hourly ...................... [RUN]
+[0m15:04:15.736042 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mta-data-491403_mta_warehouse, now model.dbt_mta.dim_calendar)
+[0m15:04:15.736844 [info ] [Thread-4 (]: 4 of 13 START sql view model mta_warehouse.stg_daily_ridership ................. [RUN]
+[0m15:04:15.737586 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_bridges_tunnels'
+[0m15:04:15.738295 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_bus_hourly'
+[0m15:04:15.738879 [debug] [Thread-1 (]: Began compiling node model.dbt_mta.dim_calendar
+[0m15:04:15.739629 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.dbt_mta.stg_daily_ridership'
+[0m15:04:15.740164 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.stg_bridges_tunnels
+[0m15:04:15.740831 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.stg_bus_hourly
+[0m15:04:15.757395 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.stg_daily_ridership
+[0m15:04:15.781631 [debug] [Thread-1 (]: On model.dbt_mta.dim_calendar: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_calendar"} */
+
+
+        select 
+
+    datetime_diff(
+        cast(cast(current_date() as date) as datetime),
+        cast(cast('2020-01-01' as date) as datetime),
+        day
+    )
+
+  
+[0m15:04:15.790881 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.stg_bus_hourly"
+[0m15:04:15.791926 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.stg_bridges_tunnels"
+[0m15:04:15.796067 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.stg_daily_ridership"
+[0m15:04:15.796862 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:04:15.798333 [debug] [Thread-3 (]: Began executing node model.dbt_mta.stg_bus_hourly
+[0m15:04:15.799351 [debug] [Thread-2 (]: Began executing node model.dbt_mta.stg_bridges_tunnels
+[0m15:04:15.800221 [debug] [Thread-4 (]: Began executing node model.dbt_mta.stg_daily_ridership
+[0m15:04:15.892461 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.stg_daily_ridership"
+[0m15:04:15.895160 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.stg_bus_hourly"
+[0m15:04:15.897001 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.stg_bridges_tunnels"
+[0m15:04:15.898175 [debug] [Thread-4 (]: On model.dbt_mta.stg_daily_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_daily_ridership"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_daily_ridership`
+),
+
+renamed as (
+    select
+        cast(cast(date as timestamp) as date) as ride_date,
+        cast(subways_total_estimated_ridership as int64) as subway_ridership,
+        cast(subways_of_comparable_pre_pandemic_day as float64) as subway_pct_pre_pandemic,
+        cast(buses_total_estimated_ridersip as int64) as bus_ridership,
+        cast(buses_of_comparable_pre_pandemic_day as float64) as bus_pct_pre_pandemic,
+        cast(lirr_total_estimated_ridership as int64) as lirr_ridership,
+        cast(lirr_of_comparable_pre_pandemic_day as float64) as lirr_pct_pre_pandemic,
+        cast(metro_north_total_estimated_ridership as int64) as metro_north_ridership,
+        cast(metro_north_of_comparable_pre_pandemic_day as float64) as metro_north_pct_pre_pandemic,
+        cast(access_a_ride_total_scheduled_trips as int64) as access_a_ride_ridership,
+        cast(bridges_and_tunnels_total_traffic as int64) as bridges_tunnels_traffic,
+        cast(staten_island_railway_total_estimated_ridership as int64) as sir_ridership
+    from source
+    where date is not null
+)
+
+select * from renamed;
+
+
+[0m15:04:15.900243 [debug] [Thread-3 (]: On model.dbt_mta.stg_bus_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_bus_hourly"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_bus_hourly`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_bus_hourly`
+),
+
+renamed as (
+    select
+        cast(transit_timestamp as timestamp) as transit_ts,
+        date(cast(transit_timestamp as timestamp)) as transit_date,
+        extract(hour from cast(transit_timestamp as timestamp)) as transit_hour,
+        extract(dayofweek from cast(transit_timestamp as timestamp)) as day_of_week,
+        bus_route,
+        fare_class_category,
+        payment_method,
+        cast(cast(ridership as float64) as int64) as ridership,
+        cast(cast(transfers as float64) as int64) as transfers
+    from source
+    where transit_timestamp is not null
+)
+
+select * from renamed;
+
+
+[0m15:04:15.902319 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:04:15.904586 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:04:15.905486 [debug] [Thread-2 (]: On model.dbt_mta.stg_bridges_tunnels: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_bridges_tunnels"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_bridges_tunnels`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_bridges_tunnels`
+),
+
+renamed as (
+    select
+        plaza,
+        date(cast(collection_date as timestamp)) as collection_date,
+        cast(day_of_week as int64) as day_of_week,
+        cast(holiday as int64) as is_holiday,
+        cast(total as int64) as total_traffic,
+        cast(class_1 as int64) as passenger_vehicles,
+        cast(class_2 as int64) as class_2_vehicles,
+        cast(class_3 as int64) as class_3_vehicles
+    from source
+    where collection_date is not null
+)
+
+select * from renamed;
+
+
+[0m15:04:15.949271 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:04:16.561058 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:af27161a-dcc0-4bf8-a622-f2366c40e1d5&page=queryresults
+[0m15:04:16.581321 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:62d9648d-bf1c-4d95-9771-38bda10cdbc1&page=queryresults
+[0m15:04:16.655371 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:f2d8eff9-a9a5-400c-975c-ce430969cb24&page=queryresults
+[0m15:04:16.701337 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:d25ed8ef-604d-42ad-b86b-479e72bfb7b5&page=queryresults
+[0m15:04:16.741920 [debug] [Thread-1 (]: SQL status: OK in 0.179 seconds
+[0m15:04:16.893394 [debug] [Thread-4 (]: SQL status: OK in 0.310 seconds
+[0m15:04:16.944592 [debug] [Thread-3 (]: SQL status: OK in 0.288 seconds
+[0m15:04:16.962241 [debug] [Thread-2 (]: SQL status: OK in 0.259 seconds
+[0m15:04:16.975328 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6be63d8d0>]}
+[0m15:04:16.977523 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6be63c3d0>]}
+[0m15:04:16.979970 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6be486920>]}
+[0m15:04:16.984493 [info ] [Thread-4 (]: 4 of 13 OK created sql view model mta_warehouse.stg_daily_ridership ............ [[32mCREATE VIEW (0 processed)[0m in 1.22s]
+[0m15:04:16.987805 [info ] [Thread-3 (]: 3 of 13 OK created sql view model mta_warehouse.stg_bus_hourly ................. [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m15:04:16.989013 [info ] [Thread-2 (]: 2 of 13 OK created sql view model mta_warehouse.stg_bridges_tunnels ............ [[32mCREATE VIEW (0 processed)[0m in 1.24s]
+[0m15:04:16.990286 [debug] [Thread-4 (]: Finished running node model.dbt_mta.stg_daily_ridership
+[0m15:04:16.991453 [debug] [Thread-3 (]: Finished running node model.dbt_mta.stg_bus_hourly
+[0m15:04:16.992523 [debug] [Thread-2 (]: Finished running node model.dbt_mta.stg_bridges_tunnels
+[0m15:04:16.993391 [debug] [Thread-4 (]: Began running node model.dbt_mta.stg_stations
+[0m15:04:16.994425 [debug] [Thread-3 (]: Began running node model.dbt_mta.stg_subway_hourly
+[0m15:04:16.995847 [debug] [Thread-2 (]: Began running node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:04:16.997325 [info ] [Thread-4 (]: 5 of 13 START sql view model mta_warehouse.stg_stations ........................ [RUN]
+[0m15:04:16.999561 [info ] [Thread-3 (]: 6 of 13 START sql view model mta_warehouse.stg_subway_hourly ................... [RUN]
+[0m15:04:17.001440 [info ] [Thread-2 (]: 7 of 13 START sql view model mta_warehouse.int_ridership_daily_by_mode ......... [RUN]
+[0m15:04:17.002749 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_daily_ridership, now model.dbt_mta.stg_stations)
+[0m15:04:17.003621 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_bus_hourly, now model.dbt_mta.stg_subway_hourly)
+[0m15:04:17.004651 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_bridges_tunnels, now model.dbt_mta.int_ridership_daily_by_mode)
+[0m15:04:17.005435 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.stg_stations
+[0m15:04:17.006150 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.stg_subway_hourly
+[0m15:04:17.006897 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:04:17.013190 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.stg_stations"
+[0m15:04:17.018780 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.stg_subway_hourly"
+[0m15:04:17.026104 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.int_ridership_daily_by_mode"
+[0m15:04:17.027657 [debug] [Thread-4 (]: Began executing node model.dbt_mta.stg_stations
+[0m15:04:17.028350 [debug] [Thread-3 (]: Began executing node model.dbt_mta.stg_subway_hourly
+[0m15:04:17.033946 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.stg_stations"
+[0m15:04:17.039345 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.stg_subway_hourly"
+[0m15:04:17.040086 [debug] [Thread-2 (]: Began executing node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:04:17.046555 [debug] [Thread-4 (]: On model.dbt_mta.stg_stations: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_stations"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_stations`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_stations`
+),
+
+renamed as (
+    select
+        complex_id as station_complex_id,
+        display_name as station_complex_name,
+        borough,
+        daytime_routes,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude,
+        case when ada = '1' then true else false end as is_ada_accessible
+    from source
+)
+
+select * from renamed;
+
+
+[0m15:04:17.047972 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.int_ridership_daily_by_mode"
+[0m15:04:17.048828 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:04:17.050032 [debug] [Thread-3 (]: On model.dbt_mta.stg_subway_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.stg_subway_hourly"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+  OPTIONS()
+  as with source as (
+    select * from `mta-data-491403`.`mta_warehouse`.`raw_subway_hourly`
+),
+
+renamed as (
+    select
+        cast(transit_timestamp as timestamp) as transit_ts,
+        date(cast(transit_timestamp as timestamp)) as transit_date,
+        extract(hour from cast(transit_timestamp as timestamp)) as transit_hour,
+        extract(dayofweek from cast(transit_timestamp as timestamp)) as day_of_week,
+        station_complex_id,
+        station_complex as station_complex_name,
+        borough,
+        fare_class_category,
+        payment_method,
+        cast(cast(ridership as float64) as int64) as ridership,
+        cast(cast(transfers as float64) as int64) as transfers,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude
+    from source
+    where transit_timestamp is not null
+)
+
+select * from renamed;
+
+
+[0m15:04:17.051092 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:04:17.095171 [debug] [Thread-2 (]: On model.dbt_mta.int_ridership_daily_by_mode: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_ridership_daily_by_mode"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode`
+  OPTIONS()
+  as select ride_date, 'Subway' as transport_mode, subway_ridership as ridership, subway_pct_pre_pandemic as pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Bus', bus_ridership, bus_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'LIRR', lirr_ridership, lirr_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Metro-North', metro_north_ridership, metro_north_pct_pre_pandemic
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'SIR', sir_ridership, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Access-A-Ride', access_a_ride_ridership, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`
+union all
+select ride_date, 'Bridges & Tunnels', bridges_tunnels_traffic, null
+from `mta-data-491403`.`mta_warehouse`.`stg_daily_ridership`;
+
+
+[0m15:04:17.139420 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:04:17.202422 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mta.dim_calendar"
+[0m15:04:17.203631 [debug] [Thread-1 (]: Began executing node model.dbt_mta.dim_calendar
+[0m15:04:17.442323 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mta.dim_calendar"
+[0m15:04:17.445508 [debug] [Thread-1 (]: On model.dbt_mta.dim_calendar: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_calendar"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`dim_calendar`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      with date_spine as (
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+     + 
+    
+    p11.generated_number * power(2, 11)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+     cross join 
+    
+    p as p11
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 2278
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+        datetime_add(
+            cast( cast('2020-01-01' as date) as datetime),
+        interval row_number() over (order by generated_number) - 1 day
+        )
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast(current_date() as date)
+
+)
+
+select * from filtered
+
+
+),
+
+enriched as (
+    select
+        cast(date_day as date) as date_day,
+        extract(year from date_day) as year,
+        extract(quarter from date_day) as quarter,
+        extract(month from date_day) as month,
+        format_date('%B', date_day) as month_name,
+        format_date('%A', date_day) as day_name,
+        extract(dayofweek from date_day) in (1, 7) as is_weekend
+    from date_spine
+)
+
+select * from enriched
+    );
+  
+[0m15:04:17.723560 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:f8f1a113-1ae6-442d-945e-533eb33f50c7&page=queryresults
+[0m15:04:17.827197 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:45c12b24-9bbe-40b5-8bfd-647e37d21e63&page=queryresults
+[0m15:04:17.862477 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:59e90622-128c-4749-b6a7-928083de6553&page=queryresults
+[0m15:04:18.032788 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:b8e5fded-e242-4c7f-95d8-9f601fa153cf&page=queryresults
+[0m15:04:18.145521 [debug] [Thread-4 (]: SQL status: OK in 0.282 seconds
+[0m15:04:18.156746 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e5055db0>]}
+[0m15:04:18.159847 [info ] [Thread-4 (]: 5 of 13 OK created sql view model mta_warehouse.stg_stations ................... [[32mCREATE VIEW (0 processed)[0m in 1.15s]
+[0m15:04:18.164057 [debug] [Thread-4 (]: Finished running node model.dbt_mta.stg_stations
+[0m15:04:18.167509 [debug] [Thread-4 (]: Began running node model.dbt_mta.dim_stations
+[0m15:04:18.168601 [info ] [Thread-4 (]: 8 of 13 START sql table model mta_warehouse.dim_stations ....................... [RUN]
+[0m15:04:18.169477 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_stations, now model.dbt_mta.dim_stations)
+[0m15:04:18.170299 [debug] [Thread-4 (]: Began compiling node model.dbt_mta.dim_stations
+[0m15:04:18.175868 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbt_mta.dim_stations"
+[0m15:04:18.176964 [debug] [Thread-4 (]: Began executing node model.dbt_mta.dim_stations
+[0m15:04:18.181953 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m15:04:18.234252 [debug] [Thread-3 (]: SQL status: OK in 0.406 seconds
+[0m15:04:18.239233 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6be63e680>]}
+[0m15:04:18.240205 [info ] [Thread-3 (]: 6 of 13 OK created sql view model mta_warehouse.stg_subway_hourly .............. [[32mCREATE VIEW (0 processed)[0m in 1.24s]
+[0m15:04:18.241042 [debug] [Thread-3 (]: Finished running node model.dbt_mta.stg_subway_hourly
+[0m15:04:18.242004 [debug] [Thread-3 (]: Began running node model.dbt_mta.int_station_daily_totals
+[0m15:04:18.243091 [info ] [Thread-3 (]: 9 of 13 START sql view model mta_warehouse.int_station_daily_totals ............ [RUN]
+[0m15:04:18.243985 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_mta.stg_subway_hourly, now model.dbt_mta.int_station_daily_totals)
+[0m15:04:18.244490 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.int_station_daily_totals
+[0m15:04:18.250086 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.int_station_daily_totals"
+[0m15:04:18.250907 [debug] [Thread-3 (]: Began executing node model.dbt_mta.int_station_daily_totals
+[0m15:04:18.255121 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.int_station_daily_totals"
+[0m15:04:18.255986 [debug] [Thread-3 (]: On model.dbt_mta.int_station_daily_totals: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_station_daily_totals"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_station_daily_totals`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    sum(ridership) as daily_ridership,
+    sum(transfers) as daily_transfers
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3;
+
+
+[0m15:04:18.256616 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:04:18.392681 [debug] [Thread-2 (]: SQL status: OK in 0.358 seconds
+[0m15:04:18.398031 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6bc0b7a30>]}
+[0m15:04:18.399279 [info ] [Thread-2 (]: 7 of 13 OK created sql view model mta_warehouse.int_ridership_daily_by_mode .... [[32mCREATE VIEW (0 processed)[0m in 1.39s]
+[0m15:04:18.400102 [debug] [Thread-2 (]: Finished running node model.dbt_mta.int_ridership_daily_by_mode
+[0m15:04:18.400652 [debug] [Thread-2 (]: Began running node model.dbt_mta.int_subway_peak_hours
+[0m15:04:18.401708 [info ] [Thread-2 (]: 10 of 13 START sql view model mta_warehouse.int_subway_peak_hours .............. [RUN]
+[0m15:04:18.402460 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_ridership_daily_by_mode, now model.dbt_mta.int_subway_peak_hours)
+[0m15:04:18.403126 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.int_subway_peak_hours
+[0m15:04:18.407241 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:04:18.408037 [debug] [Thread-2 (]: Began executing node model.dbt_mta.int_subway_peak_hours
+[0m15:04:18.412123 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.int_subway_peak_hours"
+[0m15:04:18.412902 [debug] [Thread-2 (]: On model.dbt_mta.int_subway_peak_hours: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.int_subway_peak_hours"} */
+
+
+  create or replace view `mta-data-491403`.`mta_warehouse`.`int_subway_peak_hours`
+  OPTIONS()
+  as select
+    transit_date,
+    station_complex_id,
+    station_complex_name,
+    transit_hour,
+    sum(ridership) as total_ridership,
+    case
+        when transit_hour between 7 and 9 then 'AM Peak'
+        when transit_hour between 17 and 19 then 'PM Peak'
+        when transit_hour between 10 and 16 then 'Midday'
+        when transit_hour between 20 and 23 then 'Evening'
+        else 'Overnight'
+    end as time_period
+from `mta-data-491403`.`mta_warehouse`.`stg_subway_hourly`
+group by 1, 2, 3, 4;
+
+
+[0m15:04:18.413547 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:04:18.794245 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbt_mta.dim_stations"
+[0m15:04:18.795337 [debug] [Thread-4 (]: On model.dbt_mta.dim_stations: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.dim_stations"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`dim_stations`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    station_complex_id,
+    station_complex_name,
+    borough,
+    daytime_routes,
+    latitude,
+    longitude,
+    is_ada_accessible
+from `mta-data-491403`.`mta_warehouse`.`stg_stations`
+    );
+  
+[0m15:04:19.142173 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:6b4683db-75be-4f2d-9b64-2d21d7dc5fea&page=queryresults
+[0m15:04:19.247045 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:7a45fdb9-d6ec-4510-aad1-970dd4b4baf5&page=queryresults
+[0m15:04:19.394548 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:f5791466-6835-4b15-9647-f9fca2a4417e&page=queryresults
+[0m15:04:19.543510 [debug] [Thread-2 (]: SQL status: OK in 0.295 seconds
+[0m15:04:19.556017 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6b55ba230>]}
+[0m15:04:19.557600 [debug] [Thread-3 (]: SQL status: OK in 0.414 seconds
+[0m15:04:19.558886 [info ] [Thread-2 (]: 10 of 13 OK created sql view model mta_warehouse.int_subway_peak_hours ......... [[32mCREATE VIEW (0 processed)[0m in 1.15s]
+[0m15:04:19.565181 [debug] [Thread-2 (]: Finished running node model.dbt_mta.int_subway_peak_hours
+[0m15:04:19.568205 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6bc0b65f0>]}
+[0m15:04:19.569281 [debug] [Thread-2 (]: Began running node model.dbt_mta.fct_monthly_trends
+[0m15:04:19.571073 [info ] [Thread-3 (]: 9 of 13 OK created sql view model mta_warehouse.int_station_daily_totals ....... [[32mCREATE VIEW (0 processed)[0m in 1.32s]
+[0m15:04:19.572165 [info ] [Thread-2 (]: 11 of 13 START sql table model mta_warehouse.fct_monthly_trends ................ [RUN]
+[0m15:04:19.573398 [debug] [Thread-3 (]: Finished running node model.dbt_mta.int_station_daily_totals
+[0m15:04:19.574266 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_subway_peak_hours, now model.dbt_mta.fct_monthly_trends)
+[0m15:04:19.575176 [debug] [Thread-2 (]: Began compiling node model.dbt_mta.fct_monthly_trends
+[0m15:04:19.583638 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbt_mta.fct_monthly_trends"
+[0m15:04:19.584890 [debug] [Thread-2 (]: Began executing node model.dbt_mta.fct_monthly_trends
+[0m15:04:19.593581 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:04:20.058561 [debug] [Thread-1 (]: SQL status: OK in 2.332 seconds
+[0m15:04:20.180698 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbt_mta.fct_monthly_trends"
+[0m15:04:20.183126 [debug] [Thread-2 (]: On model.dbt_mta.fct_monthly_trends: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_monthly_trends"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_monthly_trends`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    date_trunc(ride_date, month) as month_start,
+    transport_mode,
+    sum(ridership) as monthly_ridership,
+    avg(pct_pre_pandemic) as avg_pct_pre_pandemic,
+    count(*) as days_in_month
+from `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode`
+group by 1, 2
+    );
+  
+[0m15:04:20.261517 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6bd3797e0>]}
+[0m15:04:20.262578 [info ] [Thread-1 (]: 1 of 13 OK created sql table model mta_warehouse.dim_calendar .................. [[32mCREATE TABLE (2.3k rows, 0 processed)[0m in 4.52s]
+[0m15:04:20.263503 [debug] [Thread-1 (]: Finished running node model.dbt_mta.dim_calendar
+[0m15:04:20.264511 [debug] [Thread-3 (]: Began running node model.dbt_mta.fct_daily_ridership
+[0m15:04:20.265561 [info ] [Thread-3 (]: 12 of 13 START sql table model mta_warehouse.fct_daily_ridership ............... [RUN]
+[0m15:04:20.266408 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbt_mta.int_station_daily_totals, now model.dbt_mta.fct_daily_ridership)
+[0m15:04:20.267061 [debug] [Thread-3 (]: Began compiling node model.dbt_mta.fct_daily_ridership
+[0m15:04:20.272207 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_mta.fct_daily_ridership"
+[0m15:04:20.273175 [debug] [Thread-3 (]: Began executing node model.dbt_mta.fct_daily_ridership
+[0m15:04:20.277286 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:04:20.685934 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:05a5c8cb-728e-4551-b788-2cdc7b37074f&page=queryresults
+[0m15:04:20.853447 [debug] [Thread-4 (]: SQL status: OK in 1.458 seconds
+[0m15:04:20.868268 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_mta.fct_daily_ridership"
+[0m15:04:20.869592 [debug] [Thread-3 (]: On model.dbt_mta.fct_daily_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_daily_ridership"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_daily_ridership`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    r.ride_date,
+    r.transport_mode,
+    r.ridership,
+    r.pct_pre_pandemic,
+    c.day_name,
+    c.is_weekend,
+    c.month_name,
+    c.quarter,
+    c.year
+from `mta-data-491403`.`mta_warehouse`.`int_ridership_daily_by_mode` r
+left join `mta-data-491403`.`mta_warehouse`.`dim_calendar` c
+    on r.ride_date = c.date_day
+    );
+  
+[0m15:04:21.070802 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6be63e1a0>]}
+[0m15:04:21.077293 [info ] [Thread-4 (]: 8 of 13 OK created sql table model mta_warehouse.dim_stations .................. [[32mCREATE TABLE (445.0 rows, 25.2 KiB processed)[0m in 2.90s]
+[0m15:04:21.082104 [debug] [Thread-4 (]: Finished running node model.dbt_mta.dim_stations
+[0m15:04:21.085837 [debug] [Thread-1 (]: Began running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:04:21.089330 [info ] [Thread-1 (]: 13 of 13 START sql table model mta_warehouse.fct_hourly_station_ridership ...... [RUN]
+[0m15:04:21.090873 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_mta.dim_calendar, now model.dbt_mta.fct_hourly_station_ridership)
+[0m15:04:21.092119 [debug] [Thread-1 (]: Began compiling node model.dbt_mta.fct_hourly_station_ridership
+[0m15:04:21.102244 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_mta.fct_hourly_station_ridership"
+[0m15:04:21.103292 [debug] [Thread-1 (]: Began executing node model.dbt_mta.fct_hourly_station_ridership
+[0m15:04:21.112202 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_mta.fct_hourly_station_ridership"
+[0m15:04:21.115986 [debug] [Thread-1 (]: On model.dbt_mta.fct_hourly_station_ridership: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_mta", "target_name": "dev", "node_id": "model.dbt_mta.fct_hourly_station_ridership"} */
+
+  
+    
+
+    create or replace table `mta-data-491403`.`mta_warehouse`.`fct_hourly_station_ridership`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      select
+    p.transit_date,
+    p.station_complex_id,
+    p.station_complex_name,
+    p.transit_hour,
+    p.time_period,
+    p.total_ridership,
+    s.borough,
+    s.latitude,
+    s.longitude
+from `mta-data-491403`.`mta_warehouse`.`int_subway_peak_hours` p
+left join `mta-data-491403`.`mta_warehouse`.`dim_stations` s
+    on p.station_complex_id = s.station_complex_id
+    );
+  
+[0m15:04:21.117667 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:04:21.368752 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:d673701f-c898-4154-a4bf-84d69850b898&page=queryresults
+[0m15:04:22.111839 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=mta-data-491403&j=bq:us-east1:85731f43-31e8-447a-8252-73d198620047&page=queryresults
+[0m15:04:22.410780 [debug] [Thread-2 (]: SQL status: OK in 1.724 seconds
+[0m15:04:22.610505 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6b5442980>]}
+[0m15:04:22.614534 [info ] [Thread-2 (]: 11 of 13 OK created sql table model mta_warehouse.fct_monthly_trends ........... [[32mCREATE TABLE (413.0 rows, 177.5 KiB processed)[0m in 3.03s]
+[0m15:04:22.618349 [debug] [Thread-2 (]: Finished running node model.dbt_mta.fct_monthly_trends
+[0m15:04:23.189144 [debug] [Thread-3 (]: SQL status: OK in 1.819 seconds
+[0m15:04:23.382382 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6bed07e80>]}
+[0m15:04:23.383688 [info ] [Thread-3 (]: 12 of 13 OK created sql table model mta_warehouse.fct_daily_ridership .......... [[32mCREATE TABLE (12.4k rows, 271.6 KiB processed)[0m in 3.12s]
+[0m15:04:23.384822 [debug] [Thread-3 (]: Finished running node model.dbt_mta.fct_daily_ridership
+[0m15:04:26.258289 [debug] [Thread-1 (]: SQL status: OK in 4.144 seconds
+[0m15:04:26.461640 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ad01de1-b0e8-41fc-8aa1-e35a065dfe21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6bc113670>]}
+[0m15:04:26.465370 [info ] [Thread-1 (]: 13 of 13 OK created sql table model mta_warehouse.fct_hourly_station_ridership . [[32mCREATE TABLE (3.7m rows, 1.5 GiB processed)[0m in 5.37s]
+[0m15:04:26.468751 [debug] [Thread-1 (]: Finished running node model.dbt_mta.fct_hourly_station_ridership
+[0m15:04:26.472095 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:04:26.528093 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:04:26.528790 [debug] [MainThread]: Connection 'model.dbt_mta.fct_hourly_station_ridership' was properly closed.
+[0m15:04:26.529561 [debug] [MainThread]: Connection 'model.dbt_mta.fct_monthly_trends' was properly closed.
+[0m15:04:26.530358 [debug] [MainThread]: Connection 'model.dbt_mta.fct_daily_ridership' was properly closed.
+[0m15:04:26.531238 [debug] [MainThread]: Connection 'model.dbt_mta.dim_stations' was properly closed.
+[0m15:04:26.532241 [info ] [MainThread]: 
+[0m15:04:26.533184 [info ] [MainThread]: Finished running 5 table models, 8 view models in 0 hours 0 minutes and 12.05 seconds (12.05s).
+[0m15:04:26.540326 [debug] [MainThread]: Command end result
+[0m15:04:26.590943 [debug] [MainThread]: Wrote artifact WritableManifest to /home/kida/Documents/mta_data/dbt_mta/target/manifest.json
+[0m15:04:26.592923 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/kida/Documents/mta_data/dbt_mta/target/semantic_manifest.json
+[0m15:04:26.606993 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/kida/Documents/mta_data/dbt_mta/target/run_results.json
+[0m15:04:26.608607 [info ] [MainThread]: 
+[0m15:04:26.609358 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:04:26.610044 [info ] [MainThread]: 
+[0m15:04:26.610581 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=13
+[0m15:04:26.611476 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.55113, "process_in_blocks": "0", "process_kernel_time": 0.322203, "process_mem_max_rss": "241300", "process_out_blocks": "4688", "process_user_time": 8.971672}
+[0m15:04:26.612369 [debug] [MainThread]: Command `dbt run` succeeded at 15:04:26.612184 after 14.55 seconds
+[0m15:04:26.613036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e4ffb400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e3e5f1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc6e4d97790>]}
+[0m15:04:26.613631 [debug] [MainThread]: Flushing usage events
+[0m15:04:27.040945 [debug] [MainThread]: An error was encountered while trying to flush usage events

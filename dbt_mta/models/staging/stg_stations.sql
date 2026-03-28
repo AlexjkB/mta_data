@@ -1,0 +1,17 @@
+with source as (
+    select * from {{ source('raw', 'raw_stations') }}
+),
+
+renamed as (
+    select
+        complex_id as station_complex_id,
+        display_name as station_complex_name,
+        borough,
+        daytime_routes,
+        cast(latitude as float64) as latitude,
+        cast(longitude as float64) as longitude,
+        case when ada = '1' then true else false end as is_ada_accessible
+    from source
+)
+
+select * from renamed
