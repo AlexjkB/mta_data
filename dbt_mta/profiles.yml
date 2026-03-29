@@ -7,5 +7,5 @@ dbt_mta:
       project: mta-data-491403
       dataset: mta_warehouse
       location: us-east1
-      keyfile: /home/kida/Documents/important/mta-data-491403-e5d74ad1f2df.json
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
       threads: 4

@@ -4,8 +4,8 @@
 
 - Python 3.10+
 - Terraform
+- Docker and Docker Compose
 - GCP service account key with BigQuery Admin and Storage Admin roles
-- Virtual environment with dependencies installed
 
 ## Setup
 
@@ -20,6 +20,14 @@ pip install -r requirements.txt
 ### 2. Configure environment
 
 Create a `.env` file in the project root:
+
+```
+GCS_BUCKET=mta-data-491403-bucket
+BQ_DATASET=mta_warehouse
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/service-account-key.json
+```
+
+Create a `docker/.env` file (for Airflow):
 
 ```
 GCS_BUCKET=mta-data-491403-bucket
@@ -48,7 +56,7 @@ This creates:
 - GCS bucket (data lake for raw Parquet files)
 - BigQuery dataset (mta_warehouse)
 
-## Extract & Load
+## Extract & Load (Manual)
 
 ### Extract data from SODA API to GCS
 
@@ -125,6 +133,49 @@ raw_* tables (BigQuery)
       -> fct_*/dim_* tables (dashboard-ready)
 ```
 
+## Airflow Orchestration
+
+### Start Airflow
+
+```bash
+cd docker
+sudo docker-compose up airflow-init   # First time only — initializes DB and admin user
+sudo docker-compose up -d             # Start webserver + scheduler in background
+```
+
+### Access Airflow UI
+
+- URL: http://localhost:8080
+- Username: `admin`
+- Password: `admin`
+
+### DAG: mta_daily_pipeline
+
+Runs daily at 8 AM UTC. Task flow:
+
+```
+extract (5 datasets in parallel) -> load to BigQuery -> dbt run -> dbt test
+```
+
+### Manage Airflow
+
+```bash
+cd docker
+
+# View running containers
+sudo docker-compose ps
+
+# View logs
+sudo docker-compose logs -f airflow-scheduler
+sudo docker-compose logs -f airflow-webserver
+
+# Stop Airflow
+sudo docker-compose down
+
+# Rebuild after code changes
+sudo docker-compose up --build -d
+```
+
 ## Project Structure
 
 ```
@@ -138,11 +189,18 @@ mta_data/
 │   ├── variables.tf            # Project ID, region, bucket name
 │   ├── outputs.tf              # Output values
 │   └── terraform.tfvars        # Credentials (not in git)
+├── docker/
+│   ├── Dockerfile              # Airflow image with Python deps + dbt
+│   ├── docker-compose.yml      # Airflow webserver, scheduler, postgres
+│   └── .env                    # Docker environment variables (not in git)
 ├── pipelines/
 │   ├── __init__.py
 │   ├── config.py               # Dataset definitions, API config
 │   ├── extract.py              # SODA API -> Parquet -> GCS
 │   └── load.py                 # GCS Parquet -> BigQuery raw tables
+├── airflow/
+│   └── dags/
+│       └── mta_daily_pipeline.py  # Daily pipeline DAG
 └── dbt_mta/
     ├── dbt_project.yml
     ├── profiles.yml            # BigQuery connection config

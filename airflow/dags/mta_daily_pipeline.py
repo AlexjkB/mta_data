@@ -1,11 +1,8 @@
-import sys
 from datetime import datetime, timedelta
 
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from airflow.operators.python import PythonOperator
-
-sys.path.insert(0, "/opt/airflow")
+from airflow.utils.task_group import TaskGroup
 
 default_args = {
     "owner": "airflow",
@@ -33,33 +30,31 @@ with DAG(
         "stations",
     ]
 
-    extract_tasks = []
-    for dataset in datasets:
-        task = PythonOperator(
-            task_id=f"extract_{dataset}",
-            python_callable=lambda ds, **kwargs: __import__("pipelines.extract", fromlist=["extract_dataset"]).extract_dataset(
-                ds, start_date=kwargs["ds"]
-            ),
-            op_args=[dataset],
-        )
-        extract_tasks.append(task)
+    with TaskGroup("extract") as extract_group:
+        for dataset in datasets:
+            BashOperator(
+                task_id=f"extract_{dataset}",
+                bash_command=f"cd /opt/airflow && python -m pipelines.extract --dataset {dataset} --start-date {{{{ ds }}}}",
+            )
 
     # --- LOAD task ---
-    load_task = PythonOperator(
-        task_id="load_to_bigquery",
-        python_callable=lambda: __import__("pipelines.load", fromlist=["load_all_datasets"]).load_all_datasets(),
-    )
+    with TaskGroup("load") as load_group:
+        for dataset in datasets:
+            BashOperator(
+                task_id=f"load_{dataset}",
+                bash_command=f"cd /opt/airflow && python -m pipelines.load --dataset {dataset}",
+            )
 
     # --- TRANSFORM tasks ---
     dbt_run = BashOperator(
         task_id="dbt_run",
-        bash_command="cd /opt/airflow/dbt_mta && dbt run --profiles-dir .",
+        bash_command="cd /opt/airflow/dbt_mta && dbt run --profiles-dir . --log-path /tmp/dbt_logs --target-path /tmp/dbt_target",
     )
 
     dbt_test = BashOperator(
         task_id="dbt_test",
-        bash_command="cd /opt/airflow/dbt_mta && dbt test --profiles-dir .",
+        bash_command="cd /opt/airflow/dbt_mta && dbt test --profiles-dir . --log-path /tmp/dbt_logs --target-path /tmp/dbt_target",
     )
 
     # --- Dependencies ---
-    extract_tasks >> load_task >> dbt_run >> dbt_test
+    extract_group >> load_group >> dbt_run >> dbt_test
