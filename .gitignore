@@ -16,5 +16,17 @@ docker/.env
 __pycache__/
 *.pyc
 
+# dbt
+dbt_mta/target/
+dbt_mta/dbt_packages/
+dbt_mta/logs/
+dbt_mta/package-lock.yml
+
 # GCP credentials
 *.json
+
+# Claude
+.claude/
+
+# OS
+.DS_Store
